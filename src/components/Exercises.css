@@ -1,0 +1,730 @@
+.vital-signs-icon2 {
+  width: 80px;
+  height: 80px;
+  position: relative;
+}
+.active2 {
+  position: relative;
+  font-size: var(--font-size-13xl);
+  display: inline-block;
+  font-family: var(--font-inter);
+  color: var(--color-white);
+  text-align: left;
+  min-width: 101px;
+}
+.logo2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 0 var(--padding-xl);
+  gap: var(--gap-5xs);
+}
+.home-icon {
+  height: 24px;
+  width: 24px;
+  position: relative;
+}
+.dashboard1 {
+  position: relative;
+  font-size: var(--font-size-5xl);
+  font-weight: 500;
+  font-family: var(--font-inter);
+  color: var(--color-gray-300);
+  text-align: left;
+  display: inline-block;
+  min-width: 126px;
+}
+.dashboard {
+  align-self: stretch;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 0 var(--padding-lg) 0 var(--padding-13xl);
+  gap: var(--gap-base);
+}
+.exercise-icon {
+  height: 24px;
+  width: 24px;
+  position: relative;
+}
+.workouts1 {
+  position: relative;
+  font-size: var(--font-size-5xl);
+  font-weight: 500;
+  font-family: var(--font-inter);
+  color: var(--color-gray-300);
+  text-align: left;
+  display: inline-block;
+  min-width: 107px;
+}
+.workouts {
+  align-self: stretch;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 0 var(--padding-18xl) 0 var(--padding-13xl);
+  gap: var(--gap-base);
+}
+.challenges {
+  align-self: stretch;
+  height: 29px;
+}
+.person-icon {
+  height: 24px;
+  width: 24px;
+  position: relative;
+}
+.profile3 {
+  position: relative;
+  font-size: var(--font-size-5xl);
+  font-weight: 500;
+  font-family: var(--font-inter);
+  color: var(--color-gray-300);
+  text-align: left;
+  display: inline-block;
+  min-width: 74px;
+}
+.logo-container,
+.nav-sections,
+.profile2 {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.profile2 {
+  align-self: stretch;
+  flex-direction: row;
+  padding: 0 var(--padding-51xl) 0 var(--padding-13xl);
+  gap: var(--gap-base);
+}
+.logo-container,
+.nav-sections {
+  flex-direction: column;
+  gap: var(--gap-61xl);
+}
+.nav-sections {
+  margin: 0;
+  align-self: stretch;
+}
+.logo-container {
+  flex: 1;
+}
+.navigation-bar2 {
+  height: 1024px;
+  width: 216px;
+  background-color: var(--color-black);
+  overflow: hidden;
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: center;
+  padding: var(--padding-21xl) 0;
+  box-sizing: border-box;
+}
+.search-exercise {
+  position: relative;
+  font-size: var(--font-size-base);
+  font-weight: 300;
+  font-family: var(--font-inter);
+  color: var(--color-black);
+  text-align: center;
+  display: inline-block;
+  min-width: 119px;
+}
+.help {
+  border-radius: 0 var(--br-21xl) var(--br-21xl) 0;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: var(--padding-3xs) 56.5px;
+}
+.search-icon {
+  height: 18px;
+  width: 18px;
+  position: relative;
+}
+.search,
+.search-bar {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.search {
+  border-radius: 0 var(--br-21xl) var(--br-21xl) 0;
+  background-color: rgba(0, 0, 0, 0.8);
+  justify-content: center;
+  padding: var(--padding-2xs) 19px;
+}
+.search-bar {
+  border-radius: var(--br-21xl);
+  border: 0.5px solid var(--color-black);
+  justify-content: flex-start;
+  gap: var(--gap-base);
+}
+.bench-press {
+  position: relative;
+  font-size: var(--font-size-5xl);
+  font-family: var(--font-inter);
+  color: var(--color-black);
+  text-align: center;
+}
+.exercise {
+  align-self: stretch;
+  background-color: var(--color-gray-100);
+  border-bottom: 0.5px solid var(--color-black);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  padding: var(--padding-7xs-5) var(--padding-3xs) var(--padding-9xs);
+  white-space: nowrap;
+}
+.bench-press1 {
+  position: relative;
+  font-size: var(--font-size-5xl);
+  font-family: var(--font-inter);
+  color: var(--color-black);
+  text-align: center;
+  display: inline-block;
+  min-width: 85px;
+}
+.exercise1 {
+  align-self: stretch;
+  border-bottom: 0.5px solid var(--color-black);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  padding: var(--padding-7xs-5) var(--padding-3xs) var(--padding-9xs);
+}
+.bench-press2 {
+  position: relative;
+  font-size: var(--font-size-5xl);
+  font-family: var(--font-inter);
+  color: var(--color-black);
+  text-align: center;
+  display: inline-block;
+  min-width: 101px;
+}
+.exercise2 {
+  align-self: stretch;
+  border-bottom: 0.5px solid var(--color-black);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  padding: var(--padding-7xs-5) var(--padding-3xs) var(--padding-9xs);
+}
+.bench-press3 {
+  position: relative;
+  font-size: var(--font-size-5xl);
+  font-family: var(--font-inter);
+  color: var(--color-black);
+  text-align: center;
+}
+.exercise3 {
+  align-self: stretch;
+  border-bottom: 0.5px solid var(--color-black);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  padding: var(--padding-7xs-5) var(--padding-3xs) var(--padding-9xs);
+}
+.bench-press4 {
+  position: relative;
+  font-size: var(--font-size-5xl);
+  font-family: var(--font-inter);
+  color: var(--color-black);
+  text-align: center;
+}
+.exercise4 {
+  align-self: stretch;
+  border-bottom: 0.5px solid var(--color-black);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  padding: var(--padding-7xs-5) var(--padding-3xs) var(--padding-9xs);
+}
+.bench-press5 {
+  position: relative;
+  font-size: var(--font-size-5xl);
+  font-family: var(--font-inter);
+  color: var(--color-black);
+  text-align: center;
+}
+.exercise5 {
+  align-self: stretch;
+  border-bottom: 0.5px solid var(--color-black);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  padding: var(--padding-7xs-5) var(--padding-3xs) var(--padding-9xs);
+}
+.bench-press6 {
+  position: relative;
+  font-size: var(--font-size-5xl);
+  font-family: var(--font-inter);
+  color: var(--color-black);
+  text-align: center;
+  display: inline-block;
+  min-width: 125px;
+}
+.exercise6 {
+  align-self: stretch;
+  border-bottom: 0.5px solid var(--color-black);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  padding: var(--padding-7xs-5) var(--padding-3xs) var(--padding-9xs);
+}
+.bench-press7 {
+  position: relative;
+  font-size: var(--font-size-5xl);
+  font-family: var(--font-inter);
+  color: var(--color-black);
+  text-align: center;
+  display: inline-block;
+  min-width: 51px;
+}
+.exercise7 {
+  align-self: stretch;
+  border-bottom: 0.5px solid var(--color-black);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  padding: var(--padding-7xs-5) var(--padding-3xs) var(--padding-9xs);
+}
+.bench-press8 {
+  position: relative;
+  font-size: var(--font-size-5xl);
+  font-family: var(--font-inter);
+  color: var(--color-black);
+  text-align: center;
+}
+.exercise8 {
+  align-self: stretch;
+  border-bottom: 0.5px solid var(--color-black);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  padding: var(--padding-7xs-5) var(--padding-3xs) var(--padding-9xs);
+}
+.bench-press9,
+.exercise9 {
+  font-size: var(--font-size-5xl);
+  font-family: var(--font-inter);
+  color: var(--color-black);
+}
+.exercise9 {
+  border: 0;
+  background-color: transparent;
+  align-self: stretch;
+  height: 40px;
+}
+.bench-press9 {
+  position: relative;
+  text-align: center;
+  display: inline-block;
+  min-width: 107px;
+}
+.exercise10 {
+  align-self: stretch;
+  border-bottom: 0.5px solid var(--color-black);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  padding: var(--padding-7xs-5) var(--padding-3xs) var(--padding-9xs);
+}
+.bench-press10,
+.exercise11 {
+  font-size: var(--font-size-5xl);
+  font-family: var(--font-inter);
+  color: var(--color-black);
+}
+.exercise11 {
+  border: 0;
+  background-color: transparent;
+  align-self: stretch;
+  height: 40px;
+}
+.bench-press10 {
+  position: relative;
+  text-align: center;
+}
+.exercise12 {
+  align-self: stretch;
+  border-bottom: 0.5px solid var(--color-black);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  padding: var(--padding-7xs-5) var(--padding-3xs) var(--padding-9xs);
+}
+.bench-press11 {
+  position: relative;
+  font-size: var(--font-size-5xl);
+  font-family: var(--font-inter);
+  color: var(--color-black);
+  text-align: center;
+  display: inline-block;
+  min-width: 127px;
+}
+.exercise13 {
+  align-self: stretch;
+  border-bottom: 0.5px solid var(--color-black);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  padding: var(--padding-7xs-5) var(--padding-3xs) var(--padding-9xs);
+}
+.bench-press12 {
+  position: relative;
+  font-size: var(--font-size-5xl);
+  font-family: var(--font-inter);
+  color: var(--color-black);
+  text-align: center;
+}
+.exercise14 {
+  align-self: stretch;
+  border-bottom: 0.5px solid var(--color-black);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  padding: var(--padding-7xs-5) var(--padding-3xs) var(--padding-9xs);
+}
+.bench-press13,
+.exercise15 {
+  font-size: var(--font-size-5xl);
+  font-family: var(--font-inter);
+  color: var(--color-black);
+}
+.exercise15 {
+  border: 0;
+  background-color: transparent;
+  align-self: stretch;
+  height: 40px;
+}
+.bench-press13 {
+  position: relative;
+  text-align: center;
+}
+.exercise16 {
+  align-self: stretch;
+  border-bottom: 0.5px solid var(--color-black);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  padding: var(--padding-7xs-5) var(--padding-3xs) var(--padding-9xs);
+}
+.bench-press14 {
+  position: relative;
+  font-size: var(--font-size-5xl);
+  font-family: var(--font-inter);
+  color: var(--color-black);
+  text-align: center;
+  display: inline-block;
+  min-width: 62px;
+}
+.exercise17 {
+  align-self: stretch;
+  border-bottom: 0.5px solid var(--color-black);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  padding: var(--padding-7xs-5) var(--padding-3xs) var(--padding-9xs);
+}
+.bench-press15 {
+  position: relative;
+  font-size: var(--font-size-5xl);
+  font-family: var(--font-inter);
+  color: var(--color-black);
+  text-align: center;
+}
+.exercise18,
+.left-section,
+.list-of-exercises {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.exercise18 {
+  align-self: stretch;
+  border-bottom: 0.5px solid var(--color-black);
+  flex-direction: row;
+  padding: var(--padding-7xs-5) var(--padding-3xs) var(--padding-9xs);
+}
+.left-section,
+.list-of-exercises {
+  border-right: 0.5px solid var(--color-black);
+  flex-direction: column;
+}
+.list-of-exercises {
+  align-self: stretch;
+  padding: 0;
+  gap: var(--gap-5xs);
+}
+.left-section {
+  width: 340px;
+  border-radius: var(--br-base);
+  background-color: var(--color-gray-200);
+  box-sizing: border-box;
+  padding: var(--padding-21xl) 0 var(--padding-13xl);
+  gap: var(--gap-base);
+  min-width: 340px;
+  max-width: 100%;
+}
+.bench-press16 {
+  flex: 1;
+  position: relative;
+  font-size: var(--font-size-13xl);
+  font-weight: 500;
+  font-family: var(--font-inter);
+  color: var(--color-black);
+  text-align: left;
+  display: inline-block;
+  max-width: 100%;
+}
+.heading {
+  align-self: stretch;
+  border-bottom: 1px solid var(--color-black);
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  max-width: 100%;
+}
+.a-bench-press,
+.how-to-perform {
+  position: relative;
+  font-size: var(--font-size-5xl);
+  font-family: var(--font-inter);
+  color: var(--color-black);
+  text-align: left;
+}
+.a-bench-press {
+  width: 687px;
+  display: inline-block;
+  max-width: 100%;
+  flex-shrink: 0;
+}
+.how-to-perform {
+  font-weight: 500;
+}
+.breathing-inhale-as,
+.execution-lower-the,
+.setup-lie-on {
+  margin-bottom: 8px;
+}
+.setup-lie-on-a-flat-bench-wit {
+  margin: 0;
+  font-family: inherit;
+  font-size: inherit;
+  padding-left: var(--padding-13xl);
+}
+.setup-lie-on-container {
+  height: 372px;
+  flex: 1;
+  position: relative;
+  font-size: var(--font-size-5xl);
+  font-family: var(--font-inter);
+  color: var(--color-black);
+  text-align: left;
+  display: inline-block;
+  max-width: 100%;
+}
+.description,
+.setup-lie-on-a-flat-bench-wit-wrapper {
+  align-self: stretch;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  max-width: 100%;
+}
+.description {
+  flex-direction: column;
+  gap: var(--gap-base);
+  flex-shrink: 0;
+}
+.targeted-muscles1 {
+  font-weight: 500;
+}
+.chest-tricep-and,
+.targeted-muscles1 {
+  position: relative;
+  font-size: var(--font-size-5xl);
+  font-family: var(--font-inter);
+  color: var(--color-black);
+  text-align: left;
+}
+.body1,
+.targeted-muscles {
+  align-items: flex-start;
+  gap: var(--gap-base);
+}
+.targeted-muscles {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+.body1 {
+  align-self: stretch;
+  padding: 0;
+  box-sizing: border-box;
+}
+.body1,
+.content,
+.exercise-details {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  max-width: 100%;
+}
+.content {
+  align-self: stretch;
+  align-items: center;
+  gap: var(--gap-base);
+}
+.exercise-details {
+  flex: 1;
+  align-items: flex-start;
+  padding: var(--padding-37xl) 0 var(--padding-21xl);
+  box-sizing: border-box;
+  min-width: 469px;
+}
+.body,
+.exercises {
+  display: flex;
+  flex-direction: row;
+}
+.body {
+  flex: 1;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 0 131px 0 0;
+  box-sizing: border-box;
+  gap: var(--gap-13xl);
+  max-width: calc(100% - 216px);
+}
+.exercises {
+  margin: 0;
+  width: 1440px;
+  background-color: var(--color-white);
+  max-width: 100%;
+  overflow: hidden;
+  align-items: center;
+  justify-content: flex-start;
+  line-height: normal;
+  letter-spacing: normal;
+}
+@media screen and (max-width: 1200px) {
+  .body {
+    padding-right: var(--padding-46xl);
+    box-sizing: border-box;
+  }
+}
+@media screen and (max-width: 1050px) {
+  .active2 {
+    font-size: var(--font-size-7xl);
+  }
+  .left-section {
+    flex: 1;
+    padding-top: var(--padding-7xl);
+    padding-bottom: var(--padding-2xl);
+    box-sizing: border-box;
+  }
+  .bench-press16 {
+    font-size: var(--font-size-7xl);
+  }
+  .exercise-details {
+    padding-top: var(--padding-17xl);
+    padding-bottom: var(--padding-7xl);
+    box-sizing: border-box;
+  }
+  .body {
+    flex-wrap: wrap;
+  }
+}
+@media screen and (max-width: 750px) {
+  .navigation-bar2 {
+    display: none;
+    padding-top: var(--padding-7xl);
+    padding-bottom: var(--padding-7xl);
+    box-sizing: border-box;
+  }
+  .exercise-details,
+  .left-section {
+    min-width: 100%;
+  }
+  .body,
+  .exercises {
+    box-sizing: border-box;
+  }
+  .body {
+    gap: var(--gap-base);
+    padding-right: var(--padding-13xl);
+    max-width: 100%;
+  }
+  .exercises {
+    padding-left: var(--padding-xl);
+    padding-right: var(--padding-xl);
+  }
+}
+@media screen and (max-width: 450px) {
+  .active2,
+  .bench-press1,
+  .bench-press10,
+  .bench-press11,
+  .bench-press12,
+  .bench-press13,
+  .bench-press14,
+  .bench-press15,
+  .bench-press2,
+  .bench-press3,
+  .bench-press4,
+  .bench-press5,
+  .bench-press6,
+  .bench-press7,
+  .bench-press8,
+  .bench-press9,
+  .dashboard1,
+  .profile3,
+  .workouts1 {
+    font-size: var(--font-size-lgi);
+  }
+  .left-section {
+    padding-top: var(--padding-xl);
+    padding-bottom: var(--padding-xl);
+    box-sizing: border-box;
+  }
+  .a-bench-press,
+  .bench-press16,
+  .chest-tricep-and,
+  .how-to-perform,
+  .setup-lie-on-container,
+  .targeted-muscles1 {
+    font-size: var(--font-size-lgi);
+  }
+  .exercise-details {
+    padding-top: 23px;
+    padding-bottom: var(--padding-xl);
+    box-sizing: border-box;
+  }
+}

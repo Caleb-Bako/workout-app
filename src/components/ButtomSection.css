@@ -1,0 +1,39 @@
+.challenges3 {
+  margin: 0;
+  position: relative;
+  font-size: inherit;
+  font-weight: 600;
+  font-family: inherit;
+}
+.buttom-section,
+.challenges4 {
+  align-self: stretch;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: center;
+  gap: var(--gap-base);
+  max-width: 100%;
+  font-size: var(--font-size-base);
+}
+.buttom-section {
+  flex-direction: column;
+  justify-content: flex-start;
+  text-align: center;
+  font-size: var(--font-size-13xl);
+  color: var(--color-black);
+  font-family: var(--font-inter);
+}
+@media screen and (max-width: 1050px) {
+  .challenges3 {
+    font-size: var(--font-size-7xl);
+  }
+  .challenges4 {
+    flex-wrap: wrap;
+  }
+}
+@media screen and (max-width: 450px) {
+  .challenges3 {
+    font-size: var(--font-size-lgi);
+  }
+}

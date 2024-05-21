@@ -1,0 +1,21 @@
+.exercise-name28 {
+  position: relative;
+  font-weight: 500;
+}
+.exercise-name27 {
+  border: 0.5px solid var(--color-black);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: var(--padding-4xs) var(--padding-sm);
+  text-align: left;
+  font-size: var(--font-size-5xl);
+  color: var(--color-black);
+  font-family: var(--font-inter);
+}
+@media screen and (max-width: 450px) {
+  .exercise-name28 {
+    font-size: var(--font-size-lgi);
+  }
+}

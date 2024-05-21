@@ -1,0 +1,85 @@
+.home-icon2 {
+  height: 24px;
+  width: 24px;
+  position: relative;
+}
+.dashboard6 {
+  position: relative;
+  font-weight: 500;
+  display: inline-block;
+  min-width: 126px;
+  cursor: pointer;
+}
+.dashboard5 {
+  align-self: stretch;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 0 var(--padding-lg) 0 var(--padding-13xl);
+  gap: var(--gap-base);
+}
+.exercise-icon2 {
+  height: 24px;
+  width: 24px;
+  position: relative;
+}
+.workouts6 {
+  position: relative;
+  font-weight: 500;
+  display: inline-block;
+  min-width: 107px;
+}
+.workouts5 {
+  align-self: stretch;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 0 var(--padding-18xl) 0 var(--padding-13xl);
+  gap: var(--gap-base);
+}
+.directions-run-icon2 {
+  height: 24px;
+  width: 24px;
+  position: relative;
+}
+.exercises4 {
+  position: relative;
+  font-weight: 500;
+  display: inline-block;
+  min-width: 110px;
+}
+.challenges5 {
+  align-self: stretch;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 0 var(--padding-15xl) 0 var(--padding-13xl);
+  gap: var(--gap-base);
+}
+.profile8 {
+  align-self: stretch;
+  height: 29px;
+}
+.nav-sections3 {
+  margin: 0;
+  align-self: stretch;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  gap: var(--gap-61xl);
+  text-align: left;
+  font-size: var(--font-size-5xl);
+  color: var(--color-gray-300);
+  font-family: var(--font-inter);
+}
+@media screen and (max-width: 450px) {
+  .dashboard6,
+  .exercises4,
+  .workouts6 {
+    font-size: var(--font-size-lgi);
+  }
+}

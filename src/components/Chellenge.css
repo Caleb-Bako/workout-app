@@ -1,0 +1,52 @@
+.hydration-challenge {
+  position: relative;
+  font-weight: 500;
+}
+.aim-to-drink {
+  align-self: stretch;
+  position: relative;
+}
+.challenge {
+  align-self: stretch;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 0 var(--padding-10xl) 0 0;
+  gap: var(--gap-6xs);
+}
+.button1 {
+  align-self: stretch;
+  flex: 1;
+}
+.button2 {
+  height: 32px;
+  flex: 1;
+}
+.actions,
+.chellenge {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.actions {
+  align-self: stretch;
+  height: 32px;
+  flex-direction: row;
+  gap: var(--gap-5xl);
+}
+.chellenge {
+  flex: 1;
+  border-radius: var(--br-5xs);
+  background-color: var(--color-gray-500);
+  flex-direction: column;
+  padding: var(--padding-base);
+  box-sizing: border-box;
+  gap: var(--gap-2xl);
+  min-width: 244px;
+  max-width: 100%;
+  text-align: center;
+  font-size: var(--font-size-base);
+  color: var(--color-black);
+  font-family: var(--font-inter);
+}

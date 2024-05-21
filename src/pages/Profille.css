@@ -1,0 +1,475 @@
+.vital-signs-icon1 {
+  width: 80px;
+  height: 80px;
+  position: relative;
+}
+.active1 {
+  position: relative;
+  display: inline-block;
+  min-width: 101px;
+}
+.logo-group,
+.logo1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+.logo1 {
+  padding: 0 var(--padding-xl);
+  gap: var(--gap-5xs);
+}
+.logo-group {
+  flex: 1;
+  gap: var(--gap-61xl);
+}
+.navigation-bar1 {
+  height: 1024px;
+  width: 216px;
+  background-color: var(--color-black);
+  overflow: hidden;
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: center;
+  padding: var(--padding-21xl) 0;
+  box-sizing: border-box;
+}
+.profile1 {
+  margin: 0;
+  position: relative;
+  font-size: inherit;
+  font-weight: 600;
+  font-family: inherit;
+}
+.name1 {
+  position: relative;
+  display: inline-block;
+  min-width: 67px;
+}
+.text1 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: var(--padding-3xs);
+}
+.input-field {
+  border: 0;
+  background-color: transparent;
+  align-self: stretch;
+  height: 49px;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.08);
+  font-family: var(--font-inter);
+  font-weight: 300;
+  font-size: var(--font-size-5xl);
+  color: var(--color-black);
+}
+.name {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: var(--gap-5xs);
+  min-width: 345px;
+  max-width: 100%;
+}
+.gender1 {
+  position: relative;
+  display: inline-block;
+  min-width: 91px;
+}
+.gender2 {
+  align-self: stretch;
+  height: 49px;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.16);
+  font-family: var(--font-inter);
+  font-weight: 300;
+  font-size: var(--font-size-5xl);
+  color: var(--color-black);
+}
+.first-section,
+.gender {
+  display: flex;
+  justify-content: flex-start;
+}
+.gender {
+  width: 185px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: var(--gap-5xs);
+  text-align: left;
+}
+.first-section {
+  width: 796px;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: flex-end;
+  gap: var(--gap-61xl);
+  max-width: 100%;
+}
+.preferred-training-method {
+  position: relative;
+}
+.parent {
+  width: 255px;
+  height: 45px;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.04);
+  font-family: var(--font-inter);
+  font-weight: 300;
+  font-size: var(--font-size-5xl);
+  color: var(--color-black);
+}
+.training-method {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: var(--gap-5xs);
+}
+.fitness-level {
+  position: relative;
+}
+.fitness-level-wrapper {
+  align-self: stretch;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.options {
+  align-self: stretch;
+  height: 45px;
+  font-family: var(--font-inter);
+  font-weight: 300;
+  font-size: var(--font-size-5xl);
+  color: var(--color-black);
+}
+.frame-container {
+  width: 252px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  gap: var(--gap-5xs);
+  text-align: left;
+}
+.fitness-goal1 {
+  position: relative;
+}
+.level {
+  align-self: stretch;
+  height: 45px;
+  font-family: var(--font-inter);
+  font-weight: 300;
+  font-size: var(--font-size-5xl);
+  color: var(--color-black);
+}
+.check {
+  accent-color: #68cc04;
+  margin: 0;
+  height: 24px;
+  width: 24.3px;
+  border-radius: var(--br-9xs);
+}
+.build-muscle {
+  position: relative;
+  font-weight: 300;
+}
+.check-parent {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: var(--gap-base);
+  text-align: left;
+}
+.check1 {
+  margin: 0;
+  height: 24px;
+  width: 24.3px;
+  border-radius: var(--br-9xs);
+  border: 0.2px solid var(--color-black);
+  box-sizing: border-box;
+}
+.loss-weight {
+  position: relative;
+  font-weight: 300;
+}
+.check-group {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: var(--gap-base);
+}
+.check2 {
+  accent-color: #68cc04;
+  margin: 0;
+  height: 24px;
+  width: 24.3px;
+  border-radius: var(--br-9xs);
+}
+.improve-overall-fitnness {
+  position: relative;
+  font-weight: 300;
+}
+.check-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: var(--gap-base);
+}
+.check3 {
+  margin: 0;
+  height: 24px;
+  width: 24.3px;
+  border-radius: var(--br-9xs);
+  border: 0.2px solid var(--color-black);
+  box-sizing: border-box;
+}
+.gain-mass {
+  position: relative;
+  font-weight: 300;
+  display: inline-block;
+  min-width: 116px;
+}
+.frame-div {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: var(--gap-base);
+}
+.check4 {
+  margin: 0;
+  height: 24px;
+  width: 24.3px;
+  border-radius: var(--br-9xs);
+  border: 0.2px solid var(--color-black);
+  box-sizing: border-box;
+}
+.improve-endurance {
+  position: relative;
+  font-weight: 300;
+}
+.check-parent1 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: var(--gap-base);
+}
+.levels,
+.text2 {
+  align-self: stretch;
+  display: flex;
+  flex-direction: column;
+}
+.text2 {
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: var(--gap-base);
+}
+.levels {
+  border-radius: var(--br-5xs);
+  background-color: #fbfbfb;
+  align-items: center;
+  justify-content: center;
+  padding: var(--padding-base);
+}
+.level-parent {
+  gap: var(--gap-5xs);
+}
+.level-parent,
+.select {
+  align-self: stretch;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.fitness-goal,
+.profile-parent,
+.second-section,
+.user-information {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  max-width: 100%;
+}
+.fitness-goal {
+  width: 338px;
+  flex-direction: column;
+  gap: 10px;
+}
+.profile-parent,
+.second-section,
+.user-information {
+  align-self: stretch;
+}
+.second-section {
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding: 0 1px 0 0;
+  box-sizing: border-box;
+  gap: 40px 302px;
+  min-height: 455px;
+}
+.profile-parent,
+.user-information {
+  flex-direction: column;
+}
+.user-information {
+  gap: 65px;
+  text-align: center;
+  font-size: var(--font-size-5xl);
+}
+.profile-parent {
+  gap: var(--gap-21xl);
+  text-align: left;
+  font-size: var(--font-size-29xl);
+  color: var(--color-black);
+  font-family: var(--font-inter);
+}
+.button {
+  width: 280px;
+  height: 61px;
+}
+.profile,
+.profille1 {
+  display: flex;
+  box-sizing: border-box;
+}
+.profile {
+  flex: 1;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: center;
+  padding: 99.5px 180px;
+  gap: var(--gap-21xl);
+  max-width: calc(100% - 216px);
+}
+.profille1 {
+  width: 100%;
+  position: relative;
+  background-color: var(--color-white);
+  overflow: hidden;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 0 var(--padding-sm) 0 0;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: left;
+  font-size: var(--font-size-13xl);
+  color: var(--color-white);
+  font-family: var(--font-inter);
+}
+@media screen and (max-width: 1200px) {
+  .second-section {
+    gap: 151px;
+  }
+  .profile {
+    padding-left: var(--padding-71xl);
+    padding-right: var(--padding-71xl);
+    box-sizing: border-box;
+  }
+}
+@media screen and (max-width: 1050px) {
+  .active1 {
+    font-size: var(--font-size-7xl);
+  }
+  .navigation-bar1 {
+    display: none;
+  }
+  .profile1 {
+    font-size: var(--font-size-19xl);
+  }
+  .first-section {
+    gap: var(--gap-21xl);
+  }
+  .user-information {
+    gap: var(--gap-13xl);
+  }
+  .profile,
+  .profille1 {
+    box-sizing: border-box;
+  }
+  .profile {
+    padding-top: var(--padding-46xl);
+    padding-bottom: var(--padding-46xl);
+    max-width: 100%;
+  }
+  .profille1 {
+    padding-left: var(--padding-xl);
+    padding-right: var(--padding-xl);
+  }
+}
+@media screen and (max-width: 750px) {
+  .navigation-bar1 {
+    padding-top: var(--padding-7xl);
+    padding-bottom: var(--padding-7xl);
+    box-sizing: border-box;
+  }
+  .name {
+    min-width: 100%;
+  }
+  .second-section {
+    gap: 75px;
+  }
+  .profile {
+    gap: var(--gap-xl);
+    padding-left: var(--padding-26xl);
+    padding-right: var(--padding-26xl);
+    box-sizing: border-box;
+  }
+}
+@media screen and (max-width: 450px) {
+  .active1 {
+    font-size: var(--font-size-lgi);
+  }
+  .profile1 {
+    font-size: var(--font-size-10xl);
+  }
+  .gender1,
+  .name1 {
+    font-size: var(--font-size-lgi);
+  }
+  .first-section {
+    gap: var(--gap-xl);
+  }
+  .build-muscle,
+  .fitness-goal1,
+  .fitness-level,
+  .gain-mass,
+  .improve-endurance,
+  .improve-overall-fitnness,
+  .loss-weight,
+  .preferred-training-method {
+    font-size: var(--font-size-lgi);
+  }
+  .second-section {
+    gap: 38px;
+  }
+  .user-information {
+    gap: var(--gap-base);
+  }
+  .profile-parent {
+    gap: var(--gap-xl);
+  }
+  .button,
+  .profile {
+    box-sizing: border-box;
+  }
+  .button {
+    padding-left: var(--padding-xl);
+    padding-right: var(--padding-xl);
+  }
+  .profile {
+    padding: 42px var(--padding-xl);
+  }
+}
