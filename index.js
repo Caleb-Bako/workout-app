@@ -13,7 +13,8 @@ const WorkOut = require("./models/Workout.js");
 const app = express();
 const allowedOrigins = [
     'http://localhost:5173', // for local development
-    'https://workout-app-1-u0h5.onrender.com' // for deployed frontend on Render
+    'https://workout-app-1-u0h5.onrender.com', // for deployed frontend on Render
+    'https://workout-app-3hjb.onrender.com'
   ];
   app.use(cors({
     origin: function (origin, callback) {
