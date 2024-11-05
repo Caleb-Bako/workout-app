@@ -11,10 +11,19 @@ const Exercise = require("./models/Exercise.js");
 const WorkOut = require("./models/Workout.js");
 
 const app = express();
-app.use(cors({
-    credentials: true,
-    origin: 'http://localhost:5173',
-}));
+const allowedOrigins = [
+    'http://localhost:5173', // for local development
+    'https://workout-app-1-u0h5.onrender.com' // for deployed frontend on Render
+  ];
+  app.use(cors({
+    origin: function (origin, callback) {
+      if (!origin || allowedOrigins.includes(origin)) {
+        callback(null, true);
+      } else {
+        callback(new Error('Not allowed by CORS'));
+      }
+    }
+  }));
 app.use(cookieParser());
 app.use(express.json());
 
