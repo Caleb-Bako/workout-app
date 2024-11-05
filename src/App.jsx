@@ -20,7 +20,7 @@ import CreateAccountPage from "./components/Form/SignUpPage";
 import AccountLayout from "./components/Form/AccountLayout";
 
 function App() {
-  axios.defaults.baseURL = 'http://localhost:4000';
+  axios.defaults.baseURL = 'https://workout-app-3hjb.onrender.com';
   axios.defaults.withCredentials = true;
   return (
     <UserContextProvider>
