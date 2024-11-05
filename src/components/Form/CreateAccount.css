@@ -1,0 +1,41 @@
+.tutor-form{
+    padding: 10px 6px 10px 20px;
+}
+.tutor-form-heading{
+    padding-left: 40%;
+}
+.tutor-form-title input[type="text"]{
+    width: 100%;
+}
+.btn-2{
+    margin: 15px 5px 10px 37%;
+}
+.savedPhoto{
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    max-width: max-content;
+}
+.relative{
+    position: relative;
+}
+.hidden{
+    visibility: hidden;
+    width: 0px;
+}
+.uploadButton{
+    border: 2px solid black;
+    width: 155px;
+    height: 95px;
+    padding: 12px;
+    display: flex;
+    cursor: pointer;
+    align-items: center;
+    border-radius: 6px;
+   
+}
+.uploadPic{
+    margin-right: 9px;
+    color: black;
+    width: 30px;
+}

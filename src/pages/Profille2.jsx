@@ -13,51 +13,59 @@ import {
 } from "@mui/material";
 import NavSections from "../components/NavSections";
 import "./Profille.css";
+import { useContext } from "react";
+import { UserContext } from "../UserContext";
+import { Navigate } from "react-router-dom";
+import axios from "axios";
 
-const Profille = () => {
+const Profille2 = ({name,userName,pass}) => {
   const [checkChecked, setCheckChecked] = useState(true);
   const [check2Checked, setCheck2Checked] = useState(true);
+  const [redirect, setRedirect] = useState(false);
+  const [trainMethod,setTrainMethod] = useState([]);
+  const [gender,setGender] = useState([]);
+  const [fitnessLevel,setFitnessLevel] = useState([]);
+  const [checkBoxStates, setCheckBoxStates] = useState({
+    buildMuscle: false,
+    loseWeight: false,
+    flexibility: false,
+    improveFitness: false,
+    gainMass: false,
+  });
+  const {user} = useContext(UserContext);
+
+  const handleCheckboxChange = (event) => {
+    const { name, checked } = event.target;
+    setCheckBoxStates((prevState) => ({
+      ...prevState,
+      [name]: checked,
+    }));
+  };
+
+  async function saveForm(ev) {
+    ev.preventDefault();
+    try {
+        await axios.post("/signup", {
+            name,userName,pass,checkboxes: checkBoxStates,gender,trainMethod,fitnessLevel
+        });
+        alert('SignUp Successful');
+        setRedirect(true);
+    } catch (e) {
+        alert('SignUp Failed');
+    }
+}
+
+if (redirect) {
+    return <Navigate to={'/profile'} />
+}
+console.log(trainMethod);
   return (
     <div className="profille1">
-      <div className="navigation-bar1">
-        <div className="logo-group">
-          <div className="logo1">
-            <img
-              className="vital-signs-icon1"
-              loading="lazy"
-              alt=""
-              src="/vital-signs.svg"
-            />
-            <b className="active1">Active</b>
-          </div>
-          <NavSections />
-        </div>
-      </div>
       <main className="profile">
         <section className="profile-parent">
           <h1 className="profile1">Profile</h1>
           <div className="user-information">
             <div className="first-section">
-              <div className="name">
-                <div className="text1">
-                  <div className="name1">Name</div>
-                </div>
-                <TextField
-                  className="input-field"
-                  placeholder="John snow"
-                  variant="outlined"
-                  sx={{
-                    "& fieldset": { borderColor: "#000" },
-                    "& .MuiInputBase-root": {
-                      height: "49px",
-                      backgroundColor: "#fbfbfb",
-                      borderRadius: "8px",
-                      fontSize: "24px",
-                    },
-                    "& .MuiInputBase-input": { color: "#000" },
-                  }}
-                />
-              </div>
               <div className="gender">
                 <div className="gender1">Gender:</div>
                 <FormControl
@@ -116,6 +124,8 @@ const Profille = () => {
                 >
                   <InputLabel color="secondary" />
                   <Select
+                    value={gender}
+                    onChange={ev => setGender(ev.target.value)}
                     color="secondary"
                     disableUnderline
                     displayEmpty
@@ -128,13 +138,16 @@ const Profille = () => {
                       />
                     )}
                   >
-                    <MenuItem>Male</MenuItem>
+                    <MenuItem value=""><em>None</em></MenuItem>
+                    <MenuItem value="Male"><em>Male</em></MenuItem>
+                    <MenuItem value="Female"><em>Female</em></MenuItem>
                   </Select>
                   <FormHelperText />
                 </FormControl>
               </div>
             </div>
             <div className="second-section">
+            <div className="flex-section">
               <div className="training-method">
                 <div className="preferred-training-method">
                   Preferred training method
@@ -192,7 +205,9 @@ const Profille = () => {
                   }}
                 >
                   <InputLabel color="primary" />
-                  <Select
+                   <Select
+                    value={trainMethod}
+                    onChange={ev => setTrainMethod(ev.target.value)}
                     color="primary"
                     disableUnderline
                     displayEmpty
@@ -205,7 +220,9 @@ const Profille = () => {
                       />
                     )}
                   >
-                    <MenuItem>weight lifting</MenuItem>
+                    <MenuItem value=""><em>Both</em></MenuItem>
+                    <MenuItem value="Weight">weight lifting</MenuItem>
+                    <MenuItem value = "Body">body weight</MenuItem>
                   </Select>
                   <FormHelperText />
                 </FormControl>
@@ -268,6 +285,8 @@ const Profille = () => {
                 >
                   <InputLabel color="primary" />
                   <Select
+                    value={fitnessLevel}
+                    onChange={ev => setFitnessLevel(ev.target.value)}
                     color="primary"
                     disableUnderline
                     displayEmpty
@@ -280,122 +299,70 @@ const Profille = () => {
                       />
                     )}
                   >
-                    <MenuItem>Intermediate</MenuItem>
+                    <MenuItem value=""><em>None</em></MenuItem>
+                    <MenuItem value="Intermediate">Intermediate</MenuItem>
+                    <MenuItem value="Beginner">Beginner</MenuItem>
                   </Select>
                   <FormHelperText />
                 </FormControl>
+              </div>
               </div>
               <div className="fitness-goal">
                 <div className="fitness-goal1">Fitness goal</div>
                 <div className="select">
                   <div className="level-parent">
-                    <FormControl
-                      className="level"
-                      variant="standard"
-                      sx={{
-                        borderTopWidth: "0.20000000298023224px",
-                        borderRightWidth: "0.20000000298023224px",
-                        borderBottomWidth: "0.20000000298023224px",
-                        borderLeftWidth: "0.20000000298023224px",
-                        backgroundColor: "#fbfbfb",
-                        borderRadius: "8px",
-                        width: "100%",
-                        height: "45px",
-                        m: 0,
-                        p: 0,
-                        "& .MuiInputBase-root": {
-                          m: 0,
-                          p: 0,
-                          minHeight: "45px",
-                          justifyContent: "center",
-                          display: "inline-flex",
-                        },
-                        "& .MuiInputLabel-root": {
-                          m: 0,
-                          p: 0,
-                          minHeight: "45px",
-                          display: "inline-flex",
-                        },
-                        "& .MuiMenuItem-root": {
-                          m: 0,
-                          p: 0,
-                          height: "45px",
-                          display: "inline-flex",
-                        },
-                        "& .MuiSelect-select": {
-                          m: 0,
-                          p: 0,
-                          height: "45px",
-                          alignItems: "center",
-                          display: "inline-flex",
-                        },
-                        "& .MuiInput-input": { m: 0, p: 0 },
-                        "& .MuiInputBase-input": {
-                          color: "#000",
-                          fontSize: 24,
-                          fontWeight: "Light",
-                          fontFamily: "Inter",
-                          textAlign: "left",
-                          p: "0 !important",
-                          marginLeft: "16px",
-                        },
-                      }}
-                    >
-                      <InputLabel color="secondary" />
-                      <Select
-                        color="secondary"
-                        disableUnderline
-                        displayEmpty
-                        IconComponent={() => (
-                          <img
-                            width="24px"
-                            height="24px"
-                            src="/arrow-drop-down-3.svg"
-                            style={{ marginRight: "40.30000000000291px" }}
-                          />
-                        )}
-                      >
-                        <MenuItem>2 selected</MenuItem>
-                      </Select>
-                      <FormHelperText />
-                    </FormControl>
                     <div className="levels">
                       <div className="text2">
                         <div className="check-parent">
                           <input
                             className="check"
-                            checked={checkChecked}
+                            checked={checkBoxStates.buildMuscle}
+                            name="buildMuscle"
                             type="checkbox"
-                            onChange={(event) =>
-                              setCheckChecked(event.target.checked)
-                            }
+                            onChange={handleCheckboxChange}
                           />
                           <div className="build-muscle">Build muscle</div>
                         </div>
                         <div className="check-group">
-                          <input className="check1" type="checkbox" />
+                          <input 
+                          className="check" 
+                          type="checkbox"
+                          name="loseWeight"
+                          checked={checkBoxStates.loseWeight} 
+                          onChange={handleCheckboxChange}
+                          />
                           <div className="loss-weight">Loss weight</div>
+                        </div>
+                        <div className="check-group">
+                          <input 
+                          className="check" 
+                          type="checkbox"
+                          name="flexibility"
+                          checked={checkBoxStates.flexibility} 
+                          onChange={handleCheckboxChange}
+                          />
+                          <div className="loss-weight">Flexibility and Mobility</div>
                         </div>
                         <div className="check-container">
                           <input
-                            className="check2"
-                            checked={check2Checked}
+                            className="check"
+                            name="improveFitness"
+                            checked={checkBoxStates.improveFitness}
                             type="checkbox"
-                            onChange={(event) =>
-                              setCheck2Checked(event.target.checked)
-                            }
+                            onChange={handleCheckboxChange}
                           />
                           <div className="improve-overall-fitnness">
                             Improve overall fitnness
                           </div>
                         </div>
                         <div className="frame-div">
-                          <input className="check3" type="checkbox" />
-                          <div className="gain-mass">Gain mass</div>
-                        </div>
-                        <div className="check-parent1">
-                          <input className="check4" type="checkbox" />
-                          <div className="improve-endurance">{`Improve endurance `}</div>
+                          <input 
+                            className="check"
+                            name="gainMass"
+                            checked={checkBoxStates.gainMass}
+                            type="checkbox"
+                            onChange={handleCheckboxChange}/>
+                          <div className="gain-mass">Gain Muscle mass</div>
                         </div>
                       </div>
                     </div>
@@ -411,20 +378,21 @@ const Profille = () => {
           variant="contained"
           sx={{
             textTransform: "none",
-            color: "#fff",
+            color: "#ffff",
             fontSize: "24",
-            background: "rgba(0, 0, 0, 0.48)",
+            background: "#E71212;",
             borderRadius: "40px",
             "&:hover": { background: "rgba(0, 0, 0, 0.48)" },
             width: 280,
             height: 61,
           }}
+          onClick={saveForm}
         >
-          Save
+          Create
         </Button>
       </main>
     </div>
   );
 };
 
-export default Profille;
+export default Profille2;

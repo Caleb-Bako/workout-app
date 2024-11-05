@@ -1,26 +1,24 @@
-import { useMemo } from "react";
+import React from "react";
 import { Button } from "@mui/material";
 import "./Chellenge.css";
 
 const Chellenge = ({
   hydrationChallenge,
   aimToDrinkAbout4LitersOfW,
-  propDisplay,
-  propMinWidth,
+  isSelected,
+  onCompleted,
+  onSkip,
 }) => {
-  const hydrationChallengeStyle = useMemo(() => {
-    return {
-      display: propDisplay,
-      minWidth: propMinWidth,
-    };
-  }, [propDisplay, propMinWidth]);
+  const challengeStyle = {
+    backgroundColor: isSelected ? "lightblue" : "white",
+    border: isSelected ? "2px solid lightblue" : "none",
+    borderRadius: isSelected ? "10px" : "0",
+  };
 
   return (
-    <div className="chellenge">
+    <div className="chellenge" style={challengeStyle}>
       <div className="challenge">
-        <div className="hydration-challenge" style={hydrationChallengeStyle}>
-          {hydrationChallenge}
-        </div>
+        <div className="hydration-challenge">{hydrationChallenge}</div>
         <div className="aim-to-drink">{aimToDrinkAbout4LitersOfW}</div>
       </div>
       <div className="actions">
@@ -36,6 +34,7 @@ const Chellenge = ({
             borderRadius: "40px",
             "&:hover": { borderColor: "#000" },
           }}
+          onClick={onSkip} // Call onSkip function on click
         >
           Skip
         </Button>
@@ -45,14 +44,17 @@ const Chellenge = ({
           variant="contained"
           sx={{
             textTransform: "none",
-            color: "#fff",
+            color: "#ffff",
             fontSize: "16",
-            background: "rgba(0, 0, 0, 0.5)",
+            background: "#E71212",
             borderRadius: "40px",
             "&:hover": { background: "rgba(0, 0, 0, 0.5)" },
             height: 32,
           }}
-        >{`Completed `}</Button>
+          onClick={onCompleted} // Call onCompleted function on click
+        >
+          Completed
+        </Button>
       </div>
     </div>
   );

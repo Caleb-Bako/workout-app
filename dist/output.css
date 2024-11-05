@@ -1,0 +1,1213 @@
+@import "https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap";
+@import "https://fonts.googleapis.com/icon?family=Material+Icons";
+
+/* src/components/NavSections1.css */
+.dashboard4 {
+  align-self: stretch;
+  height: 29px;
+}
+.exercise-icon1 {
+  height: 24px;
+  width: 24px;
+  position: relative;
+}
+.workouts4 {
+  margin: 0;
+  position: relative;
+  font-size: inherit;
+  font-weight: 500;
+  font-family: inherit;
+  display: inline-block;
+  min-width: 107px;
+  cursor: pointer;
+}
+.workouts3 {
+  align-self: stretch;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 0 var(--padding-18xl) 0 var(--padding-13xl);
+  gap: var(--gap-base);
+}
+.directions-run-icon1 {
+  height: 24px;
+  width: 24px;
+  position: relative;
+}
+.exercises3 {
+  margin: 0;
+  position: relative;
+  font-size: inherit;
+  font-weight: 500;
+  font-family: inherit;
+  display: inline-block;
+  min-width: 110px;
+  cursor: pointer;
+}
+.challenges2 {
+  align-self: stretch;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 0 var(--padding-15xl) 0 var(--padding-13xl);
+  gap: var(--gap-base);
+}
+.person-icon2 {
+  height: 24px;
+  width: 24px;
+  position: relative;
+}
+.profile7 {
+  margin: 0;
+  position: relative;
+  font-size: inherit;
+  font-weight: 500;
+  font-family: inherit;
+  display: inline-block;
+  min-width: 74px;
+  cursor: pointer;
+}
+.nav-sections2,
+.profile6 {
+  align-self: stretch;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.profile6 {
+  flex-direction: row;
+  padding: 0 var(--padding-51xl) 0 var(--padding-13xl);
+  gap: var(--gap-base);
+}
+.nav-sections2 {
+  margin: 0;
+  flex-direction: column;
+  gap: var(--gap-61xl);
+  text-align: left;
+  font-size: var(--font-size-5xl);
+  color: var(--color-gray-300);
+  font-family: var(--font-inter);
+}
+@media screen and (max-width: 450px) {
+  .exercises3,
+  .profile7,
+  .workouts4 {
+    font-size: var(--font-size-lgi);
+  }
+}
+
+/* src/components/Chellenge.css */
+.hydration-challenge {
+  position: relative;
+  font-weight: 500;
+}
+.aim-to-drink {
+  align-self: stretch;
+  position: relative;
+}
+.challenge {
+  align-self: stretch;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 0 var(--padding-10xl) 0 0;
+  gap: var(--gap-6xs);
+}
+.button1 {
+  align-self: stretch;
+  flex: 1;
+}
+.button2 {
+  height: 32px;
+  flex: 1;
+}
+.actions,
+.chellenge {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.actions {
+  align-self: stretch;
+  height: 32px;
+  flex-direction: row;
+  gap: var(--gap-5xl);
+}
+.chellenge {
+  flex: 1;
+  border-radius: var(--br-5xs);
+  background-color: var(--color-gray-500);
+  flex-direction: column;
+  padding: var(--padding-base);
+  box-sizing: border-box;
+  gap: var(--gap-2xl);
+  min-width: 244px;
+  max-width: 100%;
+  text-align: center;
+  font-size: var(--font-size-base);
+  color: var(--color-black);
+  font-family: var(--font-inter);
+}
+
+/* src/components/ButtomSection.css */
+.challenges3 {
+  margin: 0;
+  position: relative;
+  font-size: inherit;
+  font-weight: 600;
+  font-family: inherit;
+}
+.buttom-section,
+.challenges4 {
+  align-self: stretch;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: center;
+  gap: var(--gap-base);
+  max-width: 100%;
+  font-size: var(--font-size-base);
+}
+.buttom-section {
+  flex-direction: column;
+  justify-content: flex-start;
+  text-align: center;
+  font-size: var(--font-size-13xl);
+  color: var(--color-black);
+  font-family: var(--font-inter);
+}
+@media screen and (max-width: 1050px) {
+  .challenges3 {
+    font-size: var(--font-size-7xl);
+  }
+  .challenges4 {
+    flex-wrap: wrap;
+  }
+}
+@media screen and (max-width: 450px) {
+  .challenges3 {
+    font-size: var(--font-size-lgi);
+  }
+}
+
+/* src/pages/Profille1.css */
+.vital-signs-icon {
+  width: 80px;
+  height: 80px;
+  position: relative;
+}
+.active {
+  margin: 0;
+  position: relative;
+  font-size: inherit;
+  font-weight: 700;
+  font-family: inherit;
+  display: inline-block;
+  min-width: 101px;
+}
+.logo,
+.logo-parent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+.logo {
+  padding: 0 var(--padding-xl);
+  gap: var(--gap-5xs);
+}
+.logo-parent {
+  flex: 1;
+  gap: var(--gap-61xl);
+}
+.navigation-bar {
+  height: 1024px;
+  width: 216px;
+  background-color: var(--color-black);
+  overflow: hidden;
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: center;
+  padding: var(--padding-21xl) 0;
+  box-sizing: border-box;
+}
+.hello-john,
+.today-is-a {
+  margin: 0;
+  position: relative;
+  font-family: inherit;
+}
+.hello-john {
+  font-size: inherit;
+  font-weight: 700;
+}
+.today-is-a {
+  font-size: var(--font-size-13xl);
+  font-weight: 300;
+  display: inline-block;
+  max-width: 100%;
+}
+.character-icon {
+  width: 153px;
+  height: 302.4px;
+  position: absolute;
+  margin: 0 !important;
+  right: 80px;
+  bottom: -28.7px;
+}
+.top-section,
+.top-section-wrapper {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  box-sizing: border-box;
+  max-width: 100%;
+}
+.top-section {
+  flex: 1;
+  border-radius: var(--br-5xs);
+  background-color: var(--color-gray-500);
+  flex-direction: column;
+  padding: 59.5px var(--padding-5xl);
+  position: relative;
+  gap: 29px;
+}
+.top-section-wrapper {
+  align-self: stretch;
+  flex-direction: row;
+  padding: 0 0 var(--padding-5xs);
+}
+.consistency-is-key,
+.fitness-tips,
+.stay-consistent {
+  margin: 0;
+  position: relative;
+  font-size: inherit;
+  font-weight: 600;
+  font-family: inherit;
+}
+.consistency-is-key {
+  width: 400px;
+  font-weight: 400;
+  white-space: pre-wrap;
+  text-align: left;
+  display: inline-block;
+  max-width: 100%;
+}
+.fitness-tips-parent,
+.tip {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  max-width: 100%;
+}
+.tip {
+  align-self: stretch;
+  border-radius: var(--br-5xs);
+  background-color: var(--color-gray-500);
+  padding: var(--padding-base) var(--padding-xl) 51px var(--padding-21xl);
+  box-sizing: border-box;
+  gap: var(--gap-5xs);
+  font-size: var(--font-size-5xl);
+}
+.fitness-tips-parent {
+  flex: 1;
+  gap: var(--gap-base);
+  min-width: 312px;
+}
+.motivational-quote {
+  margin: 0;
+  position: relative;
+  font-size: inherit;
+  font-weight: 600;
+  font-family: inherit;
+}
+.text {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 0 72.5px;
+}
+.fitness-is-not {
+  margin: 0;
+  align-self: stretch;
+  position: relative;
+  font-size: inherit;
+  font-weight: 400;
+  font-family: inherit;
+}
+.khloe-kardashian {
+  position: relative;
+  font-weight: 300;
+}
+.khloe-kardashian-wrapper {
+  align-self: stretch;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-end;
+  font-size: var(--font-size-base);
+}
+.frame-group,
+.quote,
+.text-parent {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.quote {
+  align-self: stretch;
+  border-radius: var(--br-5xs);
+  background-color: var(--color-gray-500);
+  flex-direction: column;
+  padding: var(--padding-37xl) var(--padding-base) var(--padding-36xl) 62px;
+  gap: var(--gap-13xl);
+  text-align: left;
+  font-size: var(--font-size-5xl);
+}
+.frame-group,
+.text-parent {
+  max-width: 100%;
+}
+.text-parent {
+  width: 440px;
+  flex-direction: column;
+  gap: var(--gap-base);
+  min-width: 440px;
+}
+.frame-group {
+  align-self: stretch;
+  flex-direction: row;
+  padding: 0 var(--padding-3xs) 0 0;
+  box-sizing: border-box;
+  gap: var(--gap-61xl);
+  font-size: var(--font-size-13xl);
+}
+.slides-child {
+  height: 8px;
+  width: 8px;
+  position: relative;
+  border-radius: 50%;
+  background-color: var(--color-gray-400);
+}
+.ellipse-div,
+.slides-child1,
+.slides-child2,
+.slides-child3,
+.slides-inner,
+.slides-item {
+  height: 8px;
+  width: 8px;
+  position: relative;
+  border-radius: 50%;
+  background-color: var(--color-gainsboro);
+}
+.slides {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: var(--gap-7xs);
+}
+.slides-child4 {
+  height: 8px;
+  width: 8px;
+  position: relative;
+  border-radius: 50%;
+  background-color: var(--color-gray-400);
+}
+.slides-child10,
+.slides-child5,
+.slides-child6,
+.slides-child7,
+.slides-child8,
+.slides-child9 {
+  height: 8px;
+  width: 8px;
+  position: relative;
+  border-radius: 50%;
+  background-color: var(--color-gainsboro);
+}
+.slides-parent,
+.slides1 {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: var(--gap-7xs);
+}
+.slides-parent {
+  width: 632px;
+  justify-content: space-between;
+  gap: var(--gap-xl);
+  max-width: 100%;
+}
+.frame-parent,
+.frame-wrapper {
+  align-self: stretch;
+  max-width: 100%;
+}
+.frame-wrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 0 var(--padding-xl) var(--padding-5xs) var(--padding-11xl);
+  box-sizing: border-box;
+}
+.frame-parent {
+  flex-direction: column;
+  gap: var(--gap-base);
+  text-align: center;
+  font-size: var(--font-size-29xl);
+  color: var(--color-black);
+  font-family: var(--font-inter);
+}
+.frame-parent,
+.profille,
+.profille-inner {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.profille-inner {
+  width: 1010px;
+  flex-direction: column;
+  padding: 85px 0 0;
+  box-sizing: border-box;
+  max-width: 100%;
+}
+.profille {
+  width: 100%;
+  position: relative;
+  background-color: var(--color-white);
+  overflow: hidden;
+  flex-direction: row;
+  gap: var(--gap-21xl);
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: left;
+  font-size: var(--font-size-13xl);
+  color: var(--color-white);
+  font-family: var(--font-inter);
+}
+@media screen and (max-width: 1200px) {
+  .profille {
+    flex-wrap: wrap;
+  }
+}
+@media screen and (max-width: 1050px) {
+  .active {
+    font-size: var(--font-size-7xl);
+  }
+  .hello-john {
+    font-size: var(--font-size-19xl);
+  }
+  .fitness-tips,
+  .motivational-quote,
+  .today-is-a {
+    font-size: var(--font-size-7xl);
+  }
+  .text-parent {
+    flex: 1;
+  }
+  .frame-group {
+    flex-wrap: wrap;
+    gap: var(--gap-21xl);
+  }
+  .profille-inner {
+    padding-top: var(--padding-36xl);
+    box-sizing: border-box;
+  }
+}
+@media screen and (max-width: 750px) {
+  .navigation-bar {
+    padding-top: var(--padding-7xl);
+    padding-bottom: var(--padding-7xl);
+    box-sizing: border-box;
+  }
+  .text-parent {
+    min-width: 100%;
+  }
+  .frame-group {
+    gap: var(--gap-xl);
+  }
+  .profille-inner {
+    padding-top: var(--padding-17xl);
+    box-sizing: border-box;
+  }
+  .profille {
+    gap: var(--gap-xl);
+  }
+}
+@media screen and (max-width: 450px) {
+  .active {
+    font-size: var(--font-size-lgi);
+  }
+  .hello-john {
+    font-size: var(--font-size-10xl);
+  }
+  .consistency-is-key,
+  .fitness-tips,
+  .motivational-quote,
+  .stay-consistent,
+  .today-is-a {
+    font-size: var(--font-size-lgi);
+  }
+  .text {
+    padding-left: var(--padding-xl);
+    padding-right: var(--padding-xl);
+    box-sizing: border-box;
+  }
+  .fitness-is-not {
+    font-size: var(--font-size-lgi);
+  }
+  .quote {
+    gap: var(--gap-base);
+    padding-left: var(--padding-xl);
+    box-sizing: border-box;
+  }
+  .slides-parent {
+    flex-wrap: wrap;
+  }
+}
+
+/* src/components/NavSections.css */
+.home-icon2 {
+  height: 24px;
+  width: 24px;
+  position: relative;
+}
+.dashboard6 {
+  position: relative;
+  font-weight: 500;
+  display: inline-block;
+  min-width: 126px;
+  cursor: pointer;
+}
+.dashboard5 {
+  align-self: stretch;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 0 var(--padding-lg) 0 var(--padding-13xl);
+  gap: var(--gap-base);
+}
+.exercise-icon2 {
+  height: 24px;
+  width: 24px;
+  position: relative;
+}
+.workouts6 {
+  position: relative;
+  font-weight: 500;
+  display: inline-block;
+  min-width: 107px;
+}
+.workouts5 {
+  align-self: stretch;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 0 var(--padding-18xl) 0 var(--padding-13xl);
+  gap: var(--gap-base);
+}
+.directions-run-icon2 {
+  height: 24px;
+  width: 24px;
+  position: relative;
+}
+.exercises4 {
+  position: relative;
+  font-weight: 500;
+  display: inline-block;
+  min-width: 110px;
+}
+.challenges5 {
+  align-self: stretch;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 0 var(--padding-15xl) 0 var(--padding-13xl);
+  gap: var(--gap-base);
+}
+.profile8 {
+  align-self: stretch;
+  height: 29px;
+}
+.nav-sections3 {
+  margin: 0;
+  align-self: stretch;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  gap: var(--gap-61xl);
+  text-align: left;
+  font-size: var(--font-size-5xl);
+  color: var(--color-gray-300);
+  font-family: var(--font-inter);
+}
+@media screen and (max-width: 450px) {
+  .dashboard6,
+  .exercises4,
+  .workouts6 {
+    font-size: var(--font-size-lgi);
+  }
+}
+
+/* src/pages/Profille.css */
+.vital-signs-icon1 {
+  width: 80px;
+  height: 80px;
+  position: relative;
+}
+.active1 {
+  position: relative;
+  display: inline-block;
+  min-width: 101px;
+}
+.logo-group,
+.logo1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+.logo1 {
+  padding: 0 var(--padding-xl);
+  gap: var(--gap-5xs);
+}
+.logo-group {
+  flex: 1;
+  gap: var(--gap-61xl);
+}
+.navigation-bar1 {
+  height: 1024px;
+  width: 216px;
+  background-color: var(--color-black);
+  overflow: hidden;
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: center;
+  padding: var(--padding-21xl) 0;
+  box-sizing: border-box;
+}
+.profile1 {
+  margin: 0;
+  position: relative;
+  font-size: inherit;
+  font-weight: 600;
+  font-family: inherit;
+}
+.name1 {
+  position: relative;
+  display: inline-block;
+  min-width: 67px;
+}
+.text1 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: var(--padding-3xs);
+}
+.input-field {
+  border: 0;
+  background-color: transparent;
+  align-self: stretch;
+  height: 49px;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.08);
+  font-family: var(--font-inter);
+  font-weight: 300;
+  font-size: var(--font-size-5xl);
+  color: var(--color-black);
+}
+.name {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: var(--gap-5xs);
+  min-width: 345px;
+  max-width: 100%;
+}
+.gender1 {
+  position: relative;
+  display: inline-block;
+  min-width: 91px;
+}
+.gender2 {
+  align-self: stretch;
+  height: 49px;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.16);
+  font-family: var(--font-inter);
+  font-weight: 300;
+  font-size: var(--font-size-5xl);
+  color: var(--color-black);
+}
+.first-section,
+.gender {
+  display: flex;
+  justify-content: flex-start;
+}
+.gender {
+  width: 185px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: var(--gap-5xs);
+  text-align: left;
+}
+.first-section {
+  width: 796px;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: flex-end;
+  gap: var(--gap-61xl);
+  max-width: 100%;
+}
+.preferred-training-method {
+  position: relative;
+}
+.parent {
+  width: 255px;
+  height: 45px;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.04);
+  font-family: var(--font-inter);
+  font-weight: 300;
+  font-size: var(--font-size-5xl);
+  color: var(--color-black);
+}
+.training-method {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: var(--gap-5xs);
+}
+.fitness-level {
+  position: relative;
+}
+.fitness-level-wrapper {
+  align-self: stretch;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.options {
+  align-self: stretch;
+  height: 45px;
+  font-family: var(--font-inter);
+  font-weight: 300;
+  font-size: var(--font-size-5xl);
+  color: var(--color-black);
+}
+.frame-container {
+  width: 252px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  gap: var(--gap-5xs);
+  text-align: left;
+}
+.fitness-goal1 {
+  position: relative;
+}
+.level {
+  align-self: stretch;
+  height: 45px;
+  font-family: var(--font-inter);
+  font-weight: 300;
+  font-size: var(--font-size-5xl);
+  color: var(--color-black);
+}
+.check {
+  accent-color: #68cc04;
+  margin: 0;
+  height: 24px;
+  width: 24.3px;
+  border-radius: var(--br-9xs);
+}
+.build-muscle {
+  position: relative;
+  font-weight: 300;
+}
+.check-parent {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: var(--gap-base);
+  text-align: left;
+}
+.check1 {
+  margin: 0;
+  height: 24px;
+  width: 24.3px;
+  border-radius: var(--br-9xs);
+  border: 0.2px solid var(--color-black);
+  box-sizing: border-box;
+}
+.loss-weight {
+  position: relative;
+  font-weight: 300;
+}
+.check-group {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: var(--gap-base);
+}
+.check2 {
+  accent-color: #68cc04;
+  margin: 0;
+  height: 24px;
+  width: 24.3px;
+  border-radius: var(--br-9xs);
+}
+.improve-overall-fitnness {
+  position: relative;
+  font-weight: 300;
+}
+.check-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: var(--gap-base);
+}
+.check3 {
+  margin: 0;
+  height: 24px;
+  width: 24.3px;
+  border-radius: var(--br-9xs);
+  border: 0.2px solid var(--color-black);
+  box-sizing: border-box;
+}
+.gain-mass {
+  position: relative;
+  font-weight: 300;
+  display: inline-block;
+  min-width: 116px;
+}
+.frame-div {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: var(--gap-base);
+}
+.check4 {
+  margin: 0;
+  height: 24px;
+  width: 24.3px;
+  border-radius: var(--br-9xs);
+  border: 0.2px solid var(--color-black);
+  box-sizing: border-box;
+}
+.improve-endurance {
+  position: relative;
+  font-weight: 300;
+}
+.check-parent1 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: var(--gap-base);
+}
+.levels,
+.text2 {
+  align-self: stretch;
+  display: flex;
+  flex-direction: column;
+}
+.text2 {
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: var(--gap-base);
+}
+.levels {
+  border-radius: var(--br-5xs);
+  background-color: #fbfbfb;
+  align-items: center;
+  justify-content: center;
+  padding: var(--padding-base);
+}
+.level-parent {
+  gap: var(--gap-5xs);
+}
+.level-parent,
+.select {
+  align-self: stretch;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.fitness-goal,
+.profile-parent,
+.second-section,
+.user-information {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  max-width: 100%;
+}
+.fitness-goal {
+  width: 338px;
+  flex-direction: column;
+  gap: 10px;
+}
+.profile-parent,
+.second-section,
+.user-information {
+  align-self: stretch;
+}
+.second-section {
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding: 0 1px 0 0;
+  box-sizing: border-box;
+  gap: 40px 302px;
+  min-height: 455px;
+}
+.profile-parent,
+.user-information {
+  flex-direction: column;
+}
+.user-information {
+  gap: 65px;
+  text-align: center;
+  font-size: var(--font-size-5xl);
+}
+.profile-parent {
+  gap: var(--gap-21xl);
+  text-align: left;
+  font-size: var(--font-size-29xl);
+  color: var(--color-black);
+  font-family: var(--font-inter);
+}
+.button {
+  width: 280px;
+  height: 61px;
+}
+.profile,
+.profille1 {
+  display: flex;
+  box-sizing: border-box;
+}
+.profile {
+  flex: 1;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: center;
+  padding: 99.5px 180px;
+  gap: var(--gap-21xl);
+  max-width: calc(100% - 216px);
+}
+.profille1 {
+  width: 100%;
+  position: relative;
+  background-color: var(--color-white);
+  overflow: hidden;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 0 var(--padding-sm) 0 0;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: left;
+  font-size: var(--font-size-13xl);
+  color: var(--color-white);
+  font-family: var(--font-inter);
+}
+@media screen and (max-width: 1200px) {
+  .second-section {
+    gap: 151px;
+  }
+  .profile {
+    padding-left: var(--padding-71xl);
+    padding-right: var(--padding-71xl);
+    box-sizing: border-box;
+  }
+}
+@media screen and (max-width: 1050px) {
+  .active1 {
+    font-size: var(--font-size-7xl);
+  }
+  .navigation-bar1 {
+    display: none;
+  }
+  .profile1 {
+    font-size: var(--font-size-19xl);
+  }
+  .first-section {
+    gap: var(--gap-21xl);
+  }
+  .user-information {
+    gap: var(--gap-13xl);
+  }
+  .profile,
+  .profille1 {
+    box-sizing: border-box;
+  }
+  .profile {
+    padding-top: var(--padding-46xl);
+    padding-bottom: var(--padding-46xl);
+    max-width: 100%;
+  }
+  .profille1 {
+    padding-left: var(--padding-xl);
+    padding-right: var(--padding-xl);
+  }
+}
+@media screen and (max-width: 750px) {
+  .navigation-bar1 {
+    padding-top: var(--padding-7xl);
+    padding-bottom: var(--padding-7xl);
+    box-sizing: border-box;
+  }
+  .name {
+    min-width: 100%;
+  }
+  .second-section {
+    gap: 75px;
+  }
+  .profile {
+    gap: var(--gap-xl);
+    padding-left: var(--padding-26xl);
+    padding-right: var(--padding-26xl);
+    box-sizing: border-box;
+  }
+}
+@media screen and (max-width: 450px) {
+  .active1 {
+    font-size: var(--font-size-lgi);
+  }
+  .profile1 {
+    font-size: var(--font-size-10xl);
+  }
+  .gender1,
+  .name1 {
+    font-size: var(--font-size-lgi);
+  }
+  .first-section {
+    gap: var(--gap-xl);
+  }
+  .build-muscle,
+  .fitness-goal1,
+  .fitness-level,
+  .gain-mass,
+  .improve-endurance,
+  .improve-overall-fitnness,
+  .loss-weight,
+  .preferred-training-method {
+    font-size: var(--font-size-lgi);
+  }
+  .second-section {
+    gap: 38px;
+  }
+  .user-information {
+    gap: var(--gap-base);
+  }
+  .profile-parent {
+    gap: var(--gap-xl);
+  }
+  .button,
+  .profile {
+    box-sizing: border-box;
+  }
+  .button {
+    padding-left: var(--padding-xl);
+    padding-right: var(--padding-xl);
+  }
+  .profile {
+    padding: 42px var(--padding-xl);
+  }
+}
+
+/* src/global.css */
+body {
+  margin: 0;
+  line-height: normal;
+}
+:root {
+  --font-inter: Inter;
+  --font-size-base: 16px;
+  --font-size-13xl: 32px;
+  --font-size-lgi: 19px;
+  --font-size-7xl: 26px;
+  --font-size-5xl: 24px;
+  --font-size-29xl: 48px;
+  --font-size-10xl: 29px;
+  --font-size-19xl: 38px;
+  --color-white: #fff;
+  --color-gray-100: rgba(0, 0, 0, 0.18);
+  --color-gray-200: rgba(0, 0, 0, 0.07);
+  --color-gray-300: rgba(255, 255, 255, 0.5);
+  --color-gray-400: rgba(0, 0, 0, 0.5);
+  --color-gray-500: rgba(0, 0, 0, 0.16);
+  --color-black: #000;
+  --color-gainsboro: #d9d9d9;
+  --gap-21xl: 40px;
+  --gap-xl: 20px;
+  --gap-base: 16px;
+  --gap-2xl: 21px;
+  --gap-5xl: 24px;
+  --gap-6xs: 7px;
+  --gap-7xs: 6px;
+  --gap-61xl: 80px;
+  --gap-13xl: 32px;
+  --gap-5xs: 8px;
+  --padding-17xl: 36px;
+  --padding-36xl: 55px;
+  --padding-base: 16px;
+  --padding-10xl: 29px;
+  --padding-xl: 20px;
+  --padding-5xs: 8px;
+  --padding-11xl: 30px;
+  --padding-3xs: 10px;
+  --padding-37xl: 56px;
+  --padding-21xl: 40px;
+  --padding-5xl: 24px;
+  --padding-7xl: 26px;
+  --padding-51xl: 70px;
+  --padding-13xl: 32px;
+  --padding-15xl: 34px;
+  --padding-18xl: 37px;
+  --padding-sm: 14px;
+  --padding-71xl: 90px;
+  --padding-26xl: 45px;
+  --padding-46xl: 65px;
+  --padding-lg: 18px;
+  --padding-2xl: 21px;
+  --padding-7xs-5: 5.5px;
+  --padding-9xs: 4px;
+  --padding-2xs: 11px;
+  --padding-38xl: 57px;
+  --padding-57xl: 76px;
+  --padding-40xl: 59px;
+  --padding-4xs: 9px;
+  --padding-6xl-5: 25.5px;
+  --br-5xs: 8px;
+  --br-9xs: 4px;
+  --br-base: 16px;
+  --br-21xl: 40px;
+}

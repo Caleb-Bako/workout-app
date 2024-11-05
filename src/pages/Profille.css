@@ -23,6 +23,10 @@
   flex: 1;
   gap: var(--gap-61xl);
 }
+.flex-section{
+  display: flex;
+  gap: 200px;
+}
 .navigation-bar1 {
   height: 1024px;
   width: 216px;
@@ -42,6 +46,7 @@
   font-size: inherit;
   font-weight: 600;
   font-family: inherit;
+  color: #E71212;
 }
 .name1 {
   position: relative;
@@ -317,7 +322,7 @@
   padding: 0 1px 0 0;
   box-sizing: border-box;
   gap: 40px 302px;
-  min-height: 455px;
+  /* min-height: 455px; */
 }
 .profile-parent,
 .user-information {
@@ -349,8 +354,9 @@
   flex-direction: column;
   align-items: flex-end;
   justify-content: center;
-  padding: 99.5px 180px;
+  padding: 15px 18px;
   gap: var(--gap-21xl);
+  width: 100%;
   max-width: calc(100% - 216px);
 }
 .profille1 {
@@ -366,7 +372,7 @@
   letter-spacing: normal;
   text-align: left;
   font-size: var(--font-size-13xl);
-  color: var(--color-white);
+  color: #E71212;
   font-family: var(--font-inter);
 }
 @media screen and (max-width: 1200px) {

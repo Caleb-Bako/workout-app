@@ -47,11 +47,11 @@
   font-family: inherit;
 }
 .hello-john {
-  font-size: inherit;
+  font-size: 32px;
   font-weight: 700;
 }
 .today-is-a {
-  font-size: var(--font-size-13xl);
+  font-size:28px;
   font-weight: 300;
   display: inline-block;
   max-width: 100%;
@@ -75,8 +75,9 @@
 .top-section {
   flex: 1;
   border-radius: var(--br-5xs);
-  background-color: var(--color-gray-500);
+  background: linear-gradient(94.65deg, #B1271B 47.99%, #542E2A 100.2%);
   flex-direction: column;
+  color: white;
   padding: 59.5px var(--padding-5xl);
   position: relative;
   gap: 29px;
@@ -88,20 +89,34 @@
 }
 .consistency-is-key,
 .fitness-tips,
-.stay-consistent {
+.stay-consistent
+ {
   margin: 0;
   position: relative;
   font-size: inherit;
   font-weight: 600;
   font-family: inherit;
 }
+.fitness-tips{
+  color: #E71212;
+  font-size: 28px;
+}
+.stay-consistentz
+ {
+  margin: 0;
+  position: relative;
+  font-size: inherit;
+  font-weight: 600;
+  font-family: inherit;
+}
+
 .consistency-is-key {
   width: 400px;
   font-weight: 400;
   white-space: pre-wrap;
   text-align: left;
   display: inline-block;
-  max-width: 100%;
+  max-width: 400px;
 }
 .fitness-tips-parent,
 .tip {
@@ -109,21 +124,26 @@
   flex-direction: column;
   align-items: flex-start;
   justify-content: flex-start;
-  max-width: 100%;
+  max-width: 500px;
 }
 .tip {
   align-self: stretch;
   border-radius: var(--br-5xs);
-  background-color: var(--color-gray-500);
+  background-color: #FFFFFF;
   padding: var(--padding-base) var(--padding-xl) 51px var(--padding-21xl);
   box-sizing: border-box;
   gap: var(--gap-5xs);
-  font-size: var(--font-size-5xl);
+  height: 200px;
+  font-size: 20px;
 }
+
 .fitness-tips-parent {
   flex: 1;
   gap: var(--gap-base);
   min-width: 312px;
+}
+.swiper-size{
+  width: 500px;
 }
 .motivational-quote {
   margin: 0;
@@ -131,6 +151,8 @@
   font-size: inherit;
   font-weight: 600;
   font-family: inherit;
+  color: #E71212;
+  font-size: 28px;
 }
 .text {
   display: flex;
@@ -169,12 +191,12 @@
 .quote {
   align-self: stretch;
   border-radius: var(--br-5xs);
-  background-color: var(--color-gray-500);
+  background-color: #FFFFFF;
   flex-direction: column;
   padding: var(--padding-37xl) var(--padding-base) var(--padding-36xl) 62px;
   gap: var(--gap-13xl);
   text-align: left;
-  font-size: var(--font-size-5xl);
+  font-size:20px;;
 }
 .frame-group,
 .text-parent {
@@ -282,17 +304,17 @@
   justify-content: flex-start;
 }
 .profille-inner {
-  width: 1010px;
+  width: 1030px;
   flex-direction: column;
-  padding: 85px 0 0;
+  padding: 80px 10px 0px 0px;
   box-sizing: border-box;
-  max-width: 100%;
+  background: #FBFBFB;
 }
 .profille {
   width: 100%;
   position: relative;
-  background-color: var(--color-white);
   overflow: hidden;
+  padding-left: 20px;
   flex-direction: row;
   gap: var(--gap-21xl);
   line-height: normal;

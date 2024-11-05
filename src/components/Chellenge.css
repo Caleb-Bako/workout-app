@@ -1,6 +1,7 @@
 .hydration-challenge {
   position: relative;
   font-weight: 500;
+  color: #E71212;
 }
 .aim-to-drink {
   align-self: stretch;
@@ -14,10 +15,13 @@
   justify-content: flex-start;
   padding: 0 var(--padding-10xl) 0 0;
   gap: var(--gap-6xs);
+  font-size: 12px;
 }
 .button1 {
   align-self: stretch;
   flex: 1;
+  color: #E71212;
+  border-color: #E71212;
 }
 .button2 {
   height: 32px;

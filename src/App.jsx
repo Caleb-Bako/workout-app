@@ -4,55 +4,40 @@ import {
   Route,
   useNavigationType,
   useLocation,
+  BrowserRouter as Router,
 } from "react-router-dom";
 import Profille1 from "./pages/Profille1";
 import Profille from "./pages/Profille";
+import Exercises from "./components/Exercises";
+import Exercises1 from "./components/Exercises1";
+import Layout from "./components/Layout";
+import AuthenticationPage from "./components/AuthenticationPage";
+import LoginPage from "./components/LoginPage";
+import axios from "axios";
+import { UserContextProvider } from "./UserContext";
+import Profille2 from "./pages/Profille2";
+import CreateAccountPage from "./components/Form/SignUpPage";
+import AccountLayout from "./components/Form/AccountLayout";
 
 function App() {
-  const action = useNavigationType();
-  const location = useLocation();
-  const pathname = location.pathname;
-
-  useEffect(() => {
-    if (action !== "POP") {
-      window.scrollTo(0, 0);
-    }
-  }, [action, pathname]);
-
-  useEffect(() => {
-    let title = "";
-    let metaDescription = "";
-
-    switch (pathname) {
-      case "/":
-        title = "";
-        metaDescription = "";
-        break;
-      case "/profille":
-        title = "";
-        metaDescription = "";
-        break;
-    }
-
-    if (title) {
-      document.title = title;
-    }
-
-    if (metaDescription) {
-      const metaDescriptionTag = document.querySelector(
-        'head > meta[name="description"]'
-      );
-      if (metaDescriptionTag) {
-        metaDescriptionTag.content = metaDescription;
-      }
-    }
-  }, [pathname]);
-
+  axios.defaults.baseURL = 'http://localhost:4000';
+  axios.defaults.withCredentials = true;
   return (
-    <Routes>
-      <Route path="/" element={<Profille1 />} />
-      <Route path="/profille" element={<Profille />} />
-    </Routes>
+    <UserContextProvider>
+      <Routes>
+          <Route path="/login" element={<LoginPage/>} />
+          <Route path ="/signup" element={<CreateAccountPage/> }/>
+          <Route path="/signupprofile" element={<Profille2/>} />
+          <Route path="/account/:subpage?" element={<AccountLayout/>} />
+        <Route element={<Layout />}>
+          <Route path ="/" element={<AuthenticationPage/> }/>
+          <Route path="/profile" element={<Profille1/>} />
+          <Route path="/profille/:id" element={<Profille />} />
+          <Route path="/exercises" element={<Exercises/>} />
+          <Route path="/exercises1" element={<Exercises1/>} />
+        </Route>
+      </Routes>
+      </UserContextProvider>
   );
 }
 export default App;

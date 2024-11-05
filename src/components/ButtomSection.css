@@ -1,9 +1,10 @@
 .challenges3 {
   margin: 0;
   position: relative;
-  font-size: inherit;
+  font-size: 28px;
   font-weight: 600;
   font-family: inherit;
+  color: #E71212;
 }
 .buttom-section,
 .challenges4 {
