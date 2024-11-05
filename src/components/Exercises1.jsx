@@ -13,14 +13,20 @@ const Exercises1 = () => {
   const { id } = useParams();
 
   useEffect(() => {
-    axios.get('/workouts/' + id)
+    axios.get('/workout-list/'+id, { withCredentials: true })
       .then(response => {
-        setWorkOuts(response.data);
+        if (response.data && response.data.length > 0) {
+          setWorkOuts(response.data);
+        } else {
+          console.error('No workouts found');
+          setWorkOuts([]);  // Set an empty array if no workouts are founds
+        }
       })
       .catch(error => {
         console.error('Error fetching exercises:', error);
       });
   }, [id]);
+  
 
   const handleExerciseClick = (workoutName, index) => {
     axios.get(`/workoutdetails/${workoutName}`)

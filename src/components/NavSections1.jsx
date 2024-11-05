@@ -17,7 +17,7 @@ const NavSections1 = () => {
   };
 
   const onWorkoutsTextClick = useCallback(() => {
-    handleNavigation('/exercises1');
+    handleNavigation(`/exercises1/${user._id}`);
   }, [navigate]);
 
   const onExercisesTextClick = useCallback(() => {
@@ -51,7 +51,7 @@ if(redirect){
         <span className="nav-item-name">Dashboard</span>
       </div>
       <div 
-        className={`nav-item ${activeItem === '/exercises1' ? 'active' : ''}`} 
+        className={`nav-item ${activeItem === `/exercises1/${user._id}` ? 'active' : ''}`} 
         onClick={onWorkoutsTextClick}
       >
         <img src="/exercise.svg" alt="Workouts" />

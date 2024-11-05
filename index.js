@@ -59,29 +59,38 @@ app.post('/signup', async(req,res)=>{
 });
 
 //Login
-app.post('/login', async(req,res)=>{
-    const{username,password} = req.body;
-    const userDoc = await User.findOne({username});
-    if(userDoc){    
-        const passOk = bcrypt.compareSync(password, userDoc.password);
-        if(passOk){
-            jwt.sign({username:userDoc.username, 
-                id:userDoc._id, 
-                }, 
-                jwtSecret, 
-                {}, 
-                (err, token)=>{
-                if(err) throw err;
-                res.cookie('token', token).json(userDoc);
-            });
-        }else{
-            res.status(422).json('pass not ok')
-            } 
-        }else{
-            res.status(422).json('not found');
-        }
-
-});
+// Login route
+app.post('/login', async (req, res) => {
+    const { username, password } = req.body;
+    const userDoc = await User.findOne({ username });
+  
+    if (userDoc) {
+      const passOk = bcrypt.compareSync(password, userDoc.password);
+      if (passOk) {
+        // Sign the JWT
+        jwt.sign(
+          { username: userDoc.username, id: userDoc._id },
+          jwtSecret,
+          {},
+          (err, token) => {
+            if (err) throw err;
+            
+            // Set the token as a secure cookie
+            res.cookie('token', token, {
+              httpOnly: true,
+              secure: true, // Use true in production (for HTTPS)
+              sameSite: 'None' // Necessary for cross-origin requests
+            }).json(userDoc); // Send response with user data
+          }
+        );
+      } else {
+        res.status(422).json('Invalid password');
+      }
+    } else {
+      res.status(422).json('User not found');
+    }
+  });
+  
 
 //Getting user data
 app.get('/profile', (req,res) =>{
@@ -137,35 +146,52 @@ app.get('/exercises/:exerciseName', async (req, res) => {
 //     res.send(exercises);
 // });
 
-app.get('/workouts/:id', async (req, res) => {
+app.get('/workout-list/:id', async (req, res) => {
+    console.log("Incoming request to /workouts/:id"); // Check if the route is being hit
+    
     const { id } = req.params;
     const { token } = req.cookies;
-
-    if (token) {
-        jwt.verify(token, jwtSecret, {}, async (err, userData) => {
-            if (err) throw err;
-            const user = await User.findById(userData.id);
-            if (!user) {
-                return res.status(404).send({ error: 'User not found' });
-            }
-
-            const { checkboxes } = user;
-            const selectedTags = Object.keys(checkboxes).filter(key => checkboxes[key]);
-
-            let exercises;
-            if (selectedTags.length > 0) {
-                exercises = await WorkOut.find({
-                    tags: { $in: selectedTags }
-                });
-            } else {
-                exercises = await WorkOut.find({});
-            }
-            res.send(exercises);
-        });
-    } else {
-        res.json(null);
+  
+    console.log("Request params:", id); // Check if params are correct
+    console.log("Request cookies:", req.cookies); // Check if cookies are being received
+  
+    if (!token) {
+      console.error("No token found in cookies");
+      return res.status(401).json({ error: 'No token provided' });
     }
-});
+  
+    jwt.verify(token, jwtSecret, {}, async (err, userData) => {
+      if (err) {
+        console.error('Token verification error:', err);
+        return res.status(403).send({ error: 'Invalid token' });
+      }
+  
+      console.log('userData from token:', userData); // Should log if token is valid
+      
+      const user = await User.findById(userData.id);
+      if (!user) {
+        console.error('User not found in database');
+        return res.status(404).send({ error: 'User not found' });
+      }
+  
+      console.log('User checkboxes:', user.checkboxes); // Debugging user preferences
+      
+      const { checkboxes } = user;
+      const selectedTags = Object.keys(checkboxes).filter(key => checkboxes[key]);
+      
+      let exercises;
+      if (selectedTags.length > 0) {
+        exercises = await WorkOut.find({ tags: { $in: selectedTags } });
+      } else {
+        exercises = await WorkOut.find({});
+      }
+  
+      console.log('Filtered exercises:', exercises); // Final step to confirm exercises
+      res.send(exercises); // Send the response once
+    });
+  });
+    
+  
 
 
 // Get workouts based on workout name and user preferences

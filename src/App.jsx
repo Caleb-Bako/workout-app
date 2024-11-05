@@ -34,7 +34,7 @@ function App() {
           <Route path="/profile" element={<Profille1/>} />
           <Route path="/profille/:id" element={<Profille />} />
           <Route path="/exercises" element={<Exercises/>} />
-          <Route path="/exercises1" element={<Exercises1/>} />
+          <Route path="/exercises1/:id" element={<Exercises1/>} />
         </Route>
       </Routes>
       </UserContextProvider>
