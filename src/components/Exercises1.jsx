@@ -39,7 +39,7 @@ const Exercises1 = () => {
         <main className="body2">
           <div className="left-section1">
             <div className="list-of-exercises1">
-              {workouts.map((workout, index) => (
+              {workouts && workouts.map((workout, index) => (
                 <div  
                   key={index} // Unique key prop
                   className={`exercise20 ${activeIndex === index ? 'active' : ''}`} // Apply active class if workout is active
@@ -52,7 +52,7 @@ const Exercises1 = () => {
           </div>
           <section className="recommendation">
             <div>
-              {selectedWorkout ? (
+              {selectedWorkout && selectedWorkout ? (
                 <div>
                   <header className="heading1">
                     <h1 className="chest">{selectedWorkout.workoutName}</h1>
