@@ -13,18 +13,22 @@ const WorkOut = require("./models/Workout.js");
 const app = express();
 const allowedOrigins = [
     'http://localhost:5173', // for local development
-    'https://workout-app-1-u0h5.onrender.com', // for deployed frontend on Render
-    'https://workout-app-3hjb.onrender.com'
+    'https://workout-app-1-u0h5.onrender.com', // deployed frontend
   ];
+  
+  // Enable CORS
   app.use(cors({
     origin: function (origin, callback) {
+      // Check if the origin is allowed
       if (!origin || allowedOrigins.includes(origin)) {
         callback(null, true);
       } else {
         callback(new Error('Not allowed by CORS'));
       }
-    }
+    },
+    credentials: true, // Allow credentials
   }));
+  
 app.use(cookieParser());
 app.use(express.json());
 
