@@ -1,9 +1,6 @@
-import { useEffect } from "react";
 import {
   Routes,
   Route,
-  useNavigationType,
-  useLocation,
   BrowserRouter as Router,
 } from "react-router-dom";
 import Profille1 from "./pages/Profille1";

@@ -12,7 +12,7 @@ const AuthenticationPage = () => {
     navigate('/login');
   };
   return (
-    <div className="container">
+    <div className="contain">
       <div className="image-section">
         <img src="/amico.svg" alt="Gym" />
       </div>

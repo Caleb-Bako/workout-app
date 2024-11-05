@@ -1,91 +1,168 @@
-.container {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
-    background-color: #f5f5f5;
-  }
-  
-  .image-section {
-    flex: 1;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  
-  .content-section {
-    flex: 1;
-    display: flex;
+/* Main container styling */
+.contain {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: #f5f5f5;
+  padding: 20px;
+}
+
+/* Image section styling */
+.image-section {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Content section styling */
+.content-section {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0 10%;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  max-width: 800px;
+}
+
+/* Logo section styling */
+.logos {
+  display: flex;
+  align-items: center;
+  font-size: 36px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.logos img {
+  width: 50px; /* Adjust size as needed */
+  height: auto;
+  margin-right: 10px;
+}
+
+.logos .app-name {
+  color: #E71212;
+  font-size: 24px; /* Large font size for app name */
+  font-weight: 600;
+}
+
+/* Button styling */
+.create-account-buttons, .login-buttons {
+  width: 100%;
+  max-width: 320px;
+  padding: 14px;
+  border-radius: 40px;
+  font-size: 16px;
+  cursor: pointer;
+  margin-bottom: 10px;
+}
+
+/* Specific button styles */
+.create-account-buttons {
+  background-color: #E71212;
+  color: #fff;
+  border: none;
+}
+
+.login-buttons {
+  background-color: transparent;
+  color: #E71212;
+  border: 1px solid #E71212;
+}
+
+/* Input styling */
+.create-account-form input {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+/* Link styling */
+a {
+  color: #E71212;
+  text-decoration: none;
+}
+
+@media (max-width: 360px) {
+  .contain {
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    margin-right: 20%;
-    padding: 20px;
-    background-color: #fff;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    border-radius: 8px;
-    width: 800px;
-    max-width: 800px;
+    padding-bottom: 40px;
   }
-  
+
   .logos {
-    display: flex;
-    font-size: 48px;
-    font-weight: bold;
-    align-items: center;
+    font-size: 24px;
+    text-align: center;
   }
+
   .logos img {
-    width: 80px; /* Adjust size as needed */
-    height: auto;
+    width: 30px;
   }
+
   .logos .app-name {
-    color: #E71212;
-    font-size: var(--font-size-19xl); /* Large font size for app name */
-    font-weight: 600;
+    font-size: 18px;
   }
-  .create-account-buttons {
-    width: Fixed (504px)px;
-    height: Hug (61px)px;
-    background: #E71212;
-    color: #fff;
-    border: none;
-    padding: 16px 80px 16px 80px;
-    border-radius: 40px;
-    cursor: pointer;
-    margin-bottom: 20px;
-  }
-  
-  .login-buttons {
-    width: Fixed (504px)px;
-    height: Hug (61px)px;
-    background-color: transparent;
-    color: #E71212;
-    border: 1px solid #E71212;
-    padding: 16px 80px 16px 80px;
-    border-radius: 40px ;
-    cursor: pointer;
-  }
-  
-  .create-account-form input {
-    width: 100%;
+
+  .create-account-buttons, .login-buttons {
     padding: 10px;
-    margin: 10px 0;
-    border: 1px solid #ccc;
-    border-radius: 5px;
+    font-size: 12px;
   }
-  
-  .create-account-form button {
-    width: 100%;
+}
+
+@media (max-width: 480px) {
+  .logos img {
+    width: 40px;
+  }
+
+  .logos .app-name {
+    font-size: 20px;
+  }
+
+  .create-account-buttons, .login-buttons {
+    max-width: 100%;
+    font-size: 14px;
+    padding: 12px;
+  }
+
+  .content-section p {
+    font-size: 16px;
+    text-align: center;
+  }
+}
+
+/* Responsive design for mobile screens */
+@media (max-width: 768px) {
+  .contain {
+    flex-direction: column;
+    height: auto;
     padding: 10px;
-    background-color: #555;
-    color: #fff;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
   }
-  
-  a {
-    color: #E71212;
-    text-decoration: none;
+
+  .image-section, .content-section {
+    flex: none;
+    width: 100%;
+    margin: 0;
   }
+
+  .content-section {
+    box-shadow: none;
+    max-width: 100%;
+  }
+
+  .logos {
+    font-size: 28px;
+  }
+
+  .create-account-buttons, .login-buttons {
+    max-width: 280px;
+    font-size: 14px;
+  }
+}
