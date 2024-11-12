@@ -18,8 +18,8 @@ import LoginPage from "./components/Authentication/LoginPage";
 import { useState } from "react";
 
 function App() {
-  // axios.defaults.baseURL = 'https://workout-app-3hjb.onrender.com';
-  axios.defaults.baseURL = 'http://localhost:4000'
+  axios.defaults.baseURL = 'https://workout-app-3hjb.onrender.com';
+  // axios.defaults.baseURL = 'http://localhost:4000'
   axios.defaults.withCredentials = true;
   const [open,setOpen] = useState(true);
   return (
