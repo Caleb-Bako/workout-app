@@ -95,10 +95,12 @@
   font-size: var(--font-size-5xl);
   color: var(--color-black);
 }
-.first-section,
 .gender {
   display: flex;
   justify-content: flex-start;
+}
+.first-section{
+  display: flex;
 }
 .gender {
   width: 185px;
@@ -357,7 +359,6 @@
   padding: 15px 18px;
   gap: var(--gap-21xl);
   width: 100%;
-  max-width: calc(100% - 216px);
 }
 .profille1 {
   width: 100%;
@@ -375,107 +376,32 @@
   color: #E71212;
   font-family: var(--font-inter);
 }
-@media screen and (max-width: 1200px) {
-  .second-section {
-    gap: 151px;
+
+@media only screen and (max-width: 450px) {
+  .flex-section{
+    flex-direction: column;
+    gap: 50px;
   }
-  .profile {
-    padding-left: var(--padding-71xl);
-    padding-right: var(--padding-71xl);
-    box-sizing: border-box;
+  .profile{
+    width: 340px;
+    align-items: flex-start;
   }
-}
-@media screen and (max-width: 1050px) {
-  .active1 {
-    font-size: var(--font-size-7xl);
+  .input-field {
+    width: 300px;
   }
-  .navigation-bar1 {
-    display: none;
-  }
-  .profile1 {
-    font-size: var(--font-size-19xl);
-  }
-  .first-section {
-    gap: var(--gap-21xl);
-  }
-  .user-information {
-    gap: var(--gap-13xl);
-  }
-  .profile,
-  .profille1 {
-    box-sizing: border-box;
-  }
-  .profile {
-    padding-top: var(--padding-46xl);
-    padding-bottom: var(--padding-46xl);
-    max-width: 100%;
-  }
-  .profille1 {
-    padding-left: var(--padding-xl);
-    padding-right: var(--padding-xl);
+  .check-container{
+    gap: 5px;
   }
 }
-@media screen and (max-width: 750px) {
-  .navigation-bar1 {
-    padding-top: var(--padding-7xl);
-    padding-bottom: var(--padding-7xl);
-    box-sizing: border-box;
-  }
-  .name {
-    min-width: 100%;
-  }
-  .second-section {
-    gap: 75px;
-  }
-  .profile {
-    gap: var(--gap-xl);
-    padding-left: var(--padding-26xl);
-    padding-right: var(--padding-26xl);
-    box-sizing: border-box;
-  }
+
+@media only screen and (min-width: 481px) and (max-width: 767px) {
+/* Small Tablets */
 }
-@media screen and (max-width: 450px) {
-  .active1 {
-    font-size: var(--font-size-lgi);
-  }
-  .profile1 {
-    font-size: var(--font-size-10xl);
-  }
-  .gender1,
-  .name1 {
-    font-size: var(--font-size-lgi);
-  }
-  .first-section {
-    gap: var(--gap-xl);
-  }
-  .build-muscle,
-  .fitness-goal1,
-  .fitness-level,
-  .gain-mass,
-  .improve-endurance,
-  .improve-overall-fitnness,
-  .loss-weight,
-  .preferred-training-method {
-    font-size: var(--font-size-lgi);
-  }
-  .second-section {
-    gap: 38px;
-  }
-  .user-information {
-    gap: var(--gap-base);
-  }
-  .profile-parent {
-    gap: var(--gap-xl);
-  }
-  .button,
-  .profile {
-    box-sizing: border-box;
-  }
-  .button {
-    padding-left: var(--padding-xl);
-    padding-right: var(--padding-xl);
-  }
-  .profile {
-    padding: 42px var(--padding-xl);
-  }
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  /* Large Tablets and Small Laptops */
+}
+
+@media only screen and (min-width: 1025px) {
+  /*Large laptops and Desktops */
 }

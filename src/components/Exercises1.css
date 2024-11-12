@@ -6,7 +6,7 @@
 
 /* Left section styles */
 .left-section1 {
-  width: 250px; /* Adjust the width as needed */
+  width: 250px;
   border-right: 0.5px solid var(--color-black);
   display: flex;
   flex-direction: column;
@@ -117,4 +117,37 @@
 
 .bench-press24 {
   font-size: 14px;
+}
+@media only screen and (max-width: 480px) {
+  /* Mobile Phones */
+  .left-section1{
+    position: fixed;
+    top: 10px;
+    left: 18%;
+    z-index: 1;
+    background-color: #E71212;
+    border-radius: 15px;
+    transition: .5s ease;
+  }
+  .left-section-close{
+    width: 0;
+    position: fixed;
+    top: 10px;
+    left: 18%;
+    z-index: 1;
+    transition: .5s ease;
+  }
+}
+
+
+@media only screen and (min-width: 481px) and (max-width: 767px) {
+/* Small Tablets */
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  /* Large Tablets and Small Laptops */
+}
+
+@media only screen and (min-width: 1025px) {
+  /*Large laptops and Desktops */
 }

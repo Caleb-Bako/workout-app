@@ -15,11 +15,13 @@ import CreateAccountPage from "./components/Form/SignUpPage";
 import AccountLayout from "./components/Form/AccountLayout";
 import AuthenticationPage from "./components/LandingPage/AuthenticationPage";
 import LoginPage from "./components/Authentication/LoginPage";
+import { useState } from "react";
 
 function App() {
   // axios.defaults.baseURL = 'https://workout-app-3hjb.onrender.com';
   axios.defaults.baseURL = 'http://localhost:4000'
   axios.defaults.withCredentials = true;
+  const [open,setOpen] = useState(true);
   return (
     <UserContextProvider>
       <Routes>
@@ -27,12 +29,12 @@ function App() {
           <Route path ="/signup" element={<CreateAccountPage/> }/>
           <Route path="/signupprofile" element={<Profille2/>} />
           <Route path="/account/:subpage?" element={<AccountLayout/>} />
-        <Route element={<Layout />}>
+        <Route element={<Layout open={open} setOpen={setOpen} />}>
           <Route path ="/" element={<AuthenticationPage/> }/>
           <Route path="/profile" element={<Profille1/>} />
           <Route path="/profille/:id" element={<Profille />} />
-          <Route path="/exercises" element={<Exercises/>} />
-          <Route path="/exercises1/:id" element={<Exercises1/>} />
+          <Route path="/exercises" element={<Exercises open={open}/>} />
+          <Route path="/exercises1/:id" element={<Exercises1 setOpen={setOpen} open={open}/>} />
         </Route>
       </Routes>
       </UserContextProvider>

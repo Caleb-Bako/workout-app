@@ -5,7 +5,7 @@ import "./Exercises.css";
 import { UserContext } from '../UserContext';
 import { Navigate } from 'react-router-dom';
 
-const Exercises = () => {
+const Exercises = ({open}) => {
   const [exercises, setExercises] = useState([]);
   const [filteredExercises, setFilteredExercises] = useState([]);
   const [selectedExercise, setSelectedExercise] = useState(null);
@@ -45,8 +45,8 @@ const Exercises = () => {
     user ?
     <form className="exercises">
       <main className="body">
-        <div className="left-section">
-            <div className="help">
+        <div className={open === true ?"left-section":'left-section-close'}>
+            {/* <div className="help">
             <TextField
                 value={searchQuery}
                 onChange={handleSearchInputChange}
@@ -66,7 +66,7 @@ const Exercises = () => {
               <div className='sc'>
               <img className="search-icon" alt="" src="/search.svg" />
               </div>
-          </div>
+          </div> */}
           <div className="list-of-exercises">
             {filteredExercises.map((exercise) => (
               <div 

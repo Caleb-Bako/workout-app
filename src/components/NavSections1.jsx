@@ -4,13 +4,12 @@ import './NavSections1.css';
 import { UserContext } from '../UserContext';
 import axios from 'axios';
 
-const NavSections1 = () => {
+const NavSections1 = ({open,setOpen}) => {
   const navigate = useNavigate();
   const location = useLocation();
   const { user,setUser } = useContext(UserContext);
   const [activeItem, setActiveItem] = useState(location.pathname);
   const[redirect,setRedirect] = useState(null);
-  const [open,setOpen] = useState(false);
 
   const handleNavigation = (path) => {
     navigate(path);
@@ -19,11 +18,13 @@ const NavSections1 = () => {
 
   const onWorkoutsTextClick = useCallback(() => {
     handleNavigation(`/exercises1/${user._id}`);
-  }, [navigate]);
+    setOpen(!open);
+  }, [open, setOpen, navigate]);
 
   const onExercisesTextClick = useCallback(() => {
     handleNavigation('/exercises');
-  }, [navigate]);
+    setOpen(!open);
+  }, [open, setOpen,navigate]);
 
   const onProfileTextClick = useCallback(() => {
     handleNavigation(`/profille/${user._id}`);
@@ -34,7 +35,7 @@ const NavSections1 = () => {
     setRedirect('/');
     setUser(null);
 }
-
+console.log(open)
 // const openSidemenu = () => {
 //   setOpen(!open);
 // }
@@ -87,7 +88,7 @@ if(redirect){
     </nav>
     {/* Side-menu */}
     <nav className="nav-sidemenu">
-    <div className="nav-logo" onClick={()=>setOpen(!open)}>
+    <div className="nav-logo">
         <img src="/vital_signs.svg" alt="Active Logo" />
       </div>
       <div 

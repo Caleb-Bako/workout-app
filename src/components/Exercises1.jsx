@@ -4,7 +4,7 @@ import "./Exercises1.css";
 import { UserContext } from "../UserContext";
 import axios from "axios";
 
-const Exercises1 = () => {
+const Exercises1 = ({setOpen,open}) => {
   const navigate = useNavigate();
   const { user } = useContext(UserContext);
   const [workouts, setWorkOuts] = useState([]);
@@ -12,6 +12,7 @@ const Exercises1 = () => {
   const [activeIndex, setActiveIndex] = useState(null); // New state for active workout index
   const { id } = useParams();
 
+  console.log(open);
   useEffect(() => {
     axios.get('/workout-list/'+id, { withCredentials: true })
       .then(response => {
@@ -43,7 +44,7 @@ const Exercises1 = () => {
     user ? (
       <div className="exercises1">
         <main className="body2">
-          <div className="left-section1">
+          <div className={open === true ?"left-section1":'left-section-close'}>
             <div className="list-of-exercises1">
               {workouts && workouts.map((workout, index) => (
                 <div  
@@ -58,7 +59,7 @@ const Exercises1 = () => {
           </div>
           <section className="recommendation">
             <div>
-              {selectedWorkout && selectedWorkout ? (
+              {selectedWorkout ? (
                 <div>
                   <header className="heading1">
                     <h1 className="chest">{selectedWorkout.workoutName}</h1>

@@ -8,7 +8,6 @@ import {
   FormControl,
   Button,
 } from "@mui/material";
-import NavSections from "../components/NavSections";
 import "./Profille.css";
 import { useContext } from "react";
 import { UserContext } from "../UserContext";

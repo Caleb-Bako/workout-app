@@ -503,7 +503,6 @@
   background: #FBFBFB;
   width: 100%;
   height: 100vh;
-  max-width: 100%;
 }
 .exercises {
   margin: 0;
@@ -516,97 +515,50 @@
   line-height: normal;
   letter-spacing: normal;
 }
-@media screen and (max-width: 1200px) {
-  .body {
-    padding-right: var(--padding-46xl);
-    box-sizing: border-box;
+
+@media only screen and (max-width: 480px) {
+  /* Mobile Phones */
+  .left-section{
+    position: fixed;
+    width: 150px;
+    top: 10px;
+    left: 14%;
+    z-index: 1;
+    transition: .5s ease;
   }
-}
-@media screen and (max-width: 1050px) {
-  .active2 {
-    font-size: var(--font-size-7xl);
-  }
-  .left-section {
-    flex: 1;
-    padding-top: var(--padding-7xl);
-    padding-bottom: var(--padding-2xl);
-    box-sizing: border-box;
-  }
-  .bench-press16 {
-    font-size: var(--font-size-7xl);
-  }
-  .exercise-details {
-    padding-top: var(--padding-17xl);
-    padding-bottom: var(--padding-7xl);
-    box-sizing: border-box;
-  }
-  .body {
-    flex-wrap: wrap;
-  }
-}
-@media screen and (max-width: 750px) {
-  .navigation-bar2 {
+  .left-section-close{
     display: none;
-    padding-top: var(--padding-7xl);
-    padding-bottom: var(--padding-7xl);
-    box-sizing: border-box;
+    width: 0;
+    position: fixed;
+    top: 10px;
+    left: 18%;
+    z-index: 1;
+    transition: .5s ease;
   }
-  .exercise-details,
-  .left-section {
-    min-width: 100%;
+  .content{
+    margin-left: 18%;
   }
-  .body,
-  .exercises {
-    box-sizing: border-box;
+  .list-of-exercises{
+    width: 150px;
   }
-  .body {
-    gap: var(--gap-base);
-    padding-right: var(--padding-13xl);
-    max-width: 100%;
+  .exercises{
+    max-width: 350px;
   }
-  .exercises {
-    padding-left: var(--padding-xl);
-    padding-right: var(--padding-xl);
+  .a-bench-press, .description {
+    max-width: 300px;
   }
 }
-@media screen and (max-width: 450px) {
-  .active2,
-  .bench-press1,
-  .bench-press10,
-  .bench-press11,
-  .bench-press12,
-  .bench-press13,
-  .bench-press14,
-  .bench-press15,
-  .bench-press2,
-  .bench-press3,
-  .bench-press4,
-  .bench-press5,
-  .bench-press6,
-  .bench-press7,
-  .bench-press8,
-  .bench-press9,
-  .dashboard1,
-  .profile3,
-  .workouts1 {
-    font-size: var(--font-size-lgi);
-  }
-  .left-section {
-    padding-top: var(--padding-xl);
-    padding-bottom: var(--padding-xl);
-    box-sizing: border-box;
-  }
-  .a-bench-press,
-  .bench-press16,
-  .chest-tricep-and,
-  .how-to-perform,
-  .setup-lie-on-container,
-  .targeted-muscles1 {
-    font-size: var(--font-size-lgi);
-  }
-  .exercise-details {
-    padding-top: 23px;
-    padding-bottom: var(--padding-xl);
-    box-sizing: border-box;
-  }
+
+
+
+@media only screen and (min-width: 481px) and (max-width: 767px) {
+/* Small Tablets */
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  /* Large Tablets and Small Laptops */
+}
+
+@media only screen and (min-width: 1025px) {
+  /*Large laptops and Desktops */
 }
