@@ -1,4 +1,4 @@
-.singup-container {
+.auth-container {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -7,74 +7,53 @@
     height: 100vh;
     background-color: #f5f5f5;
   }
-  
-  .singup-content{
+  .auth-content{
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     padding: 20px;
     background-color: #fff;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     border-radius: 8px;
-    max-width: 400px;
-  }
-  
-  .singup-logo{
-    font-size: 48px;
-    font-weight: bold;
-    margin-bottom: 20px;
-    display: flex;
-    align-items: center;
+    width: 770px;
+    height: 100vh;
   }
 
-  .singup-logo img {
+  .auth-logo{
+    display: flex;
+    font-size: 48px;
+    font-weight: bold;
+    align-items: center;
+  }
+  .auth-logo img {
     width: 80px; /* Adjust size as needed */
     height: auto;
-    
   }
-  .singup-logo .app-name {
+  .auth-logo .app-name {
     color: #E71212;
     font-size: var(--font-size-19xl); /* Large font size for app name */
     font-weight: 600;
   }
-  
-  .singup-button {
+  .create-account-buttons {
+    width: 504px;
+    height:61px;
     background: #E71212;
     color: #fff;
     border: none;
-    padding: 10px 20px;
+    padding: 16px 80px 16px 80px;
     border-radius: 40px;
     cursor: pointer;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
   }
-  .singup-form-heading{
-    color:#E71212;
-  }
-  .login-button {
+  
+  .auth-button {
+    width: 504px;
+    height: 61px;
     background-color: transparent;
-    color: #007bff;
-    border: 1px solid #007bff;
-    padding: 10px 20px;
-    border-radius: 5px;
-    cursor: pointer;
-  }
-  
-  .singup-form input {
-    width: 100%;
-    padding: 10px;
-    margin: 10px 0;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-  }
-  
-  .singup-form button {
-    width: 100%;
-    padding: 10px;
-    background: #E71212;
-    color: #fff;
-    border: none;
-    border-radius: 40px;
+    color: #E71212;
+    border: 1px solid #E71212;
+    padding: 16px 80px 16px 80px;
+    border-radius: 40px ;
     cursor: pointer;
   }
   
@@ -82,40 +61,47 @@
     color: #E71212;
     text-decoration: none;
   }
+
   @media only screen and (max-width: 480px) {
     /* Mobile Phones */
-    .singup-container {
+    .auth-container{
       flex-direction: column;
       align-items: center;
       justify-content: center;
       overflow: scroll
     }
-    .singup-image img{
+    .auth-image img{
       width: 280px;
       margin: 0;
     }
-    .singup-content{
-      width: 380px;
+    .auth-content{
+      width: 280px;
       height: 400px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
       margin: 0;
     }
-    .singup-content p{
-      font-size: xx-small;
+    .auth-content p{
+      font-size: x-small;
+      margin-bottom: 10%;
     }
-    .singup-logo {
-      font-size: 28px;
+    .auth-logo .app-name {
+      font-size: x-large;
     }
-    .singup-logo img{
-      width: 50px;
-      height: 50px;
+    .auth-logo img{
+      font-size: large;
     }
-    .singup-form-heading{
-      font-size: 20px;
+    .create-account-buttons{
+      font-size: small;
+      padding: 16px 30px;
+    }
+    .auth-button, .create-account-buttons {
+      width:200px;
+      height:50px;
     }
   }
   
   @media only screen and (min-width: 481px) and (max-width: 767px) {
-  /* Small Tablets */
+    /* Small Tablets */
   }
   
   @media only screen and (min-width: 768px) and (max-width: 1024px) {

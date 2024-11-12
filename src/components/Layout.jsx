@@ -1,17 +1,16 @@
-// components/Layout.js
-import React, { useContext } from 'react';
 import { Outlet, useLocation } from 'react-router-dom';
 import NavSections1 from './NavSections1';
+import './Layout.css';
 
 const Layout = () => {
   const location = useLocation();
   const noNavRoutes = ['/', '/signup','/login','/signupprofile'];
 
   return (
-    <div style={{ display: 'flex', height: '100vh' }}>
+    <div className='layout-body'>
         {!noNavRoutes.includes(location.pathname) && <NavSections1 />}
-        <div style={{ flex: 1, marginLeft: !noNavRoutes.includes(location.pathname) ? '210px' : '0' }}>
-        <Outlet />
+        <div className={!noNavRoutes.includes(location.pathname) ? 'layout-content' : '' }>
+          <Outlet />
         </div>
     </div>
   );

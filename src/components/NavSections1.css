@@ -1,5 +1,5 @@
 /* NavSections1.css */
-.nav-sections2 {
+.nav-container{
   position: fixed;
   top: 0;
   left: 0;
@@ -16,23 +16,26 @@
   font-family: var(--font-inter);
   gap: 3%;
 }
+.nav-sidemenu{
+  display: none;
+}
 
-.logo {
+.nav-logo {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-bottom: 10px; /* Adjusted gap */
+  margin-bottom: 10px; 
 }
 
-.logo img {
-  width: 100px; /* Adjust size as needed */
+.nav-logo img {
+  width: 100px; 
   height: 100px;
 }
 
-.logo .app-name {
-  font-size: 32px; /* Large font size for app name */
+.nav-logo .app-name {
+  font-size: 32px; 
   font-weight: 700;
-  margin-top: 10px; /* Adjusted gap */
+  margin-top: 10px; 
 }
 
 .nav-item {
@@ -40,7 +43,7 @@
   flex-direction: row;
   align-items: center;
   cursor: pointer;
-  padding: var(--padding-sm) 15px; /* Adjusted padding */
+  padding: var(--padding-sm) 15px;
   width: 208px;
   color: #E7121280;
   transition: color 0.3s, background-color 0.3s;
@@ -50,14 +53,14 @@
   background-color: #EDF1F3;
   color: #E71212;
 }
-.logout-button{
+.nav-logout-button{
   border:1px solid #E71212;
   border-radius: 15px;
   display: flex;
   flex-direction: row;
   align-items: center;
   cursor: pointer;
-  padding: 5px 5px 5px 15px; /* Adjusted padding */
+  padding: 5px 5px 5px 15px;
   width: 140px;
   gap: 9%;
   color: #E71212;
@@ -79,8 +82,59 @@
   height: 24px;
 }
 
-@media screen and (max-width: 450px) {
-  .exercises3, .profile7, .workouts4 {
-    font-size: var(--font-size-lgi);
+
+@media only screen and (max-width: 480px) {
+  /* Mobile Phones */
+  .nav-container{
+    display: none;
   }
+  .nav-sidemenu{
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    background-color: #FFFFFF;
+    color: #E71212;
+    font-size: 24px;
+    line-height: 29.05px;
+    font-family: var(--font-inter);
+    gap: 2%;
+  }
+  .nav-logo img {
+    width: 50px; 
+    height: 50px;
+    margin: 18px 0;
+  }
+  .nav-item{
+    width: 50px;
+    justify-content: center;
+  }
+  .nav-logout-button{
+    justify-content: center;
+    border: none;
+    margin-top: 50%;
+  }
+  .nav-item img {
+    width: 30px;
+    height: 30px;
+    margin: 0;
+  }
+}
+
+
+@media only screen and (min-width: 481px) and (max-width: 767px) {
+/* Small Tablets */
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  /* Large Tablets and Small Laptops */
+}
+
+@media only screen and (min-width: 1025px) {
+  /*Large laptops and Desktops */
 }

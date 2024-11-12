@@ -16,11 +16,8 @@ import { Navigate, useParams } from "react-router-dom";
 import axios from "axios";
 
 const Profille = () => {
-  const [checkChecked, setCheckChecked] = useState(true);
-  const [check2Checked, setCheck2Checked] = useState(true);
   const {user} = useContext(UserContext);
   const [username,setUserName] = useState('');
-  const [redirect, setRedirect] = useState(false);
   const [trainMethod,setTrainMethod] = useState([]);
   const [gender,setGender] = useState([]);
   const [fitnessLevel,setFitnessLevel] = useState([]);

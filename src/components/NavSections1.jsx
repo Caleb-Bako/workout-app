@@ -10,6 +10,7 @@ const NavSections1 = () => {
   const { user,setUser } = useContext(UserContext);
   const [activeItem, setActiveItem] = useState(location.pathname);
   const[redirect,setRedirect] = useState(null);
+  const [open,setOpen] = useState(false);
 
   const handleNavigation = (path) => {
     navigate(path);
@@ -33,13 +34,18 @@ const NavSections1 = () => {
     setRedirect('/');
     setUser(null);
 }
+
+// const openSidemenu = () => {
+//   setOpen(!open);
+// }
 if(redirect){
   return <Navigate to={redirect}/>
 }
   return (
     user ?
-    <nav className="nav-sections2">
-      <div className="logo">
+    <div>
+    <nav className="nav-container">
+      <div className="nav-logo">
         <img src="/vital_signs.svg" alt="Active Logo" />
         <div className="app-name">Active</div>
       </div>
@@ -72,13 +78,51 @@ if(redirect){
         <span className="nav-item-name">Profile</span>
       </div>
       <div 
-        className='logout-button'
+        className='nav-logout-button'
         onClick={logout}
       >
         <img src="/logout.svg" alt="Profile" />
         <span className="nav-item-name">Logout</span>
       </div>
-    </nav>: <Navigate to='/' />
+    </nav>
+    {/* Side-menu */}
+    <nav className="nav-sidemenu">
+    <div className="nav-logo" onClick={()=>setOpen(!open)}>
+        <img src="/vital_signs.svg" alt="Active Logo" />
+      </div>
+      <div 
+        className={`nav-item ${activeItem === '/profile' ? 'active' : ''}`} 
+        onClick={() => handleNavigation('/profile')}
+      >
+        <img src="/home.svg" alt="Home" />
+      </div>
+      <div 
+        className={`nav-item ${activeItem === `/exercises1/${user._id}` ? 'active' : ''}`} 
+        onClick={onWorkoutsTextClick}
+      >
+        <img src="/exercise.svg" alt="Workouts" />
+      </div>
+      <div 
+        className={`nav-item ${activeItem === '/exercises' ? 'active' : ''}`} 
+        onClick={onExercisesTextClick}
+      >
+        <img src="/directions_run.svg" alt="Exercises" />
+      </div>
+      <div 
+        className={`nav-item ${activeItem === `/profille/${user._id}` ? 'active' : ''}`} 
+        onClick={onProfileTextClick}
+      >
+        <img src="/person.svg" alt="Profile" />
+      </div>
+      <div 
+        className='nav-logout-button'
+        onClick={logout}
+      >
+        <img src="/logout.svg" alt="Profile" />
+      </div>
+    </nav>
+    </div> 
+    : <Navigate to='/' />
   );
 };
 

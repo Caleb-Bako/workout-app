@@ -1,7 +1,6 @@
 import { useState } from "react";
 import './CreateAccount.css';
-import axios from "axios";
-import { Navigate, useParams } from 'react-router-dom';
+import { useParams } from 'react-router-dom';
 import CreateAccountPage from "./SignUpPage";
 import Profille2 from "../../pages/Profille2";
 

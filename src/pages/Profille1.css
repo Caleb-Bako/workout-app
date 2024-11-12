@@ -324,83 +324,41 @@
   color: var(--color-white);
   font-family: var(--font-inter);
 }
-@media screen and (max-width: 1200px) {
-  .profille {
-    flex-wrap: wrap;
-  }
-}
-@media screen and (max-width: 1050px) {
-  .active {
-    font-size: var(--font-size-7xl);
-  }
-  .hello-john {
-    font-size: var(--font-size-19xl);
-  }
-  .fitness-tips,
-  .motivational-quote,
-  .today-is-a {
-    font-size: var(--font-size-7xl);
-  }
-  .text-parent {
-    flex: 1;
-  }
-  .frame-group {
-    flex-wrap: wrap;
-    gap: var(--gap-21xl);
-  }
+@media only screen and (max-width: 480px) {
+  /* Mobile Phones */
   .profille-inner {
-    padding-top: var(--padding-36xl);
-    box-sizing: border-box;
+    width: 335px;
+  }
+  .hello-john ,.today-is-a{
+    max-width: 50%;
+    font-size: small;
+  }
+  .character-icon{
+      width: 123px;
+      height: 302.4px;
+      right: 20px;
+  }
+  .frame-group{
+    flex-direction: column;
+  }
+  .tip{
+    max-width: 320px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  .consistency-is-key{
+    width: 280px;
   }
 }
-@media screen and (max-width: 750px) {
-  .navigation-bar {
-    padding-top: var(--padding-7xl);
-    padding-bottom: var(--padding-7xl);
-    box-sizing: border-box;
-  }
-  .text-parent {
-    min-width: 100%;
-  }
-  .frame-group {
-    gap: var(--gap-xl);
-  }
-  .profille-inner {
-    padding-top: var(--padding-17xl);
-    box-sizing: border-box;
-  }
-  .profille {
-    gap: var(--gap-xl);
-  }
+
+
+@media only screen and (min-width: 481px) and (max-width: 767px) {
+/* Small Tablets */
 }
-@media screen and (max-width: 450px) {
-  .active {
-    font-size: var(--font-size-lgi);
-  }
-  .hello-john {
-    font-size: var(--font-size-10xl);
-  }
-  .consistency-is-key,
-  .fitness-tips,
-  .motivational-quote,
-  .stay-consistent,
-  .today-is-a {
-    font-size: var(--font-size-lgi);
-  }
-  .text {
-    padding-left: var(--padding-xl);
-    padding-right: var(--padding-xl);
-    box-sizing: border-box;
-  }
-  .fitness-is-not {
-    font-size: var(--font-size-lgi);
-  }
-  .quote {
-    gap: var(--gap-base);
-    padding-left: var(--padding-xl);
-    box-sizing: border-box;
-  }
-  .slides-parent {
-    flex-wrap: wrap;
-  }
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  /* Large Tablets and Small Laptops */
+}
+
+@media only screen and (min-width: 1025px) {
+  /*Large laptops and Desktops */
 }

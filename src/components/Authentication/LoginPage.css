@@ -1,4 +1,4 @@
-.singup-container {
+.login-container {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -7,8 +7,7 @@
     height: 100vh;
     background-color: #f5f5f5;
   }
-  
-  .singup-content{
+  .login-content {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -17,40 +16,34 @@
     background-color: #fff;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     border-radius: 8px;
-    max-width: 400px;
+    width: 400px;
   }
-  
-  .singup-logo{
+  .login-form-heading{
+    color:#E71212;
+  }
+  .login-logo {
+    display: flex;
+    align-items: center;
     font-size: 48px;
     font-weight: bold;
     margin-bottom: 20px;
-    display: flex;
-    align-items: center;
   }
-
-  .singup-logo img {
-    width: 80px; /* Adjust size as needed */
-    height: auto;
-    
-  }
-  .singup-logo .app-name {
+  .login-logo .app-name {
     color: #E71212;
-    font-size: var(--font-size-19xl); /* Large font size for app name */
+    font-size: var(--font-size-19xl);
     font-weight: 600;
   }
   
-  .singup-button {
-    background: #E71212;
+  .login-button {
+    background-color: #555;
     color: #fff;
     border: none;
     padding: 10px 20px;
-    border-radius: 40px;
+    border-radius: 5px;
     cursor: pointer;
     margin-bottom: 10px;
   }
-  .singup-form-heading{
-    color:#E71212;
-  }
+  
   .login-button {
     background-color: transparent;
     color: #007bff;
@@ -60,7 +53,7 @@
     cursor: pointer;
   }
   
-  .singup-form input {
+  .login-form input {
     width: 100%;
     padding: 10px;
     margin: 10px 0;
@@ -68,48 +61,49 @@
     border-radius: 5px;
   }
   
-  .singup-form button {
+  .login-form button {
     width: 100%;
     padding: 10px;
-    background: #E71212;
+    background-color: #555;
     color: #fff;
     border: none;
-    border-radius: 40px;
+    border-radius: 5px;
     cursor: pointer;
   }
   
   a {
-    color: #E71212;
+    color: #007bff;
     text-decoration: none;
   }
+
   @media only screen and (max-width: 480px) {
     /* Mobile Phones */
-    .singup-container {
+    .login-container {
       flex-direction: column;
       align-items: center;
       justify-content: center;
       overflow: scroll
     }
-    .singup-image img{
+    .login-image img{
       width: 280px;
       margin: 0;
     }
-    .singup-content{
+    .login-content{
       width: 380px;
       height: 400px;
       margin: 0;
     }
-    .singup-content p{
+    .login-content p{
       font-size: xx-small;
     }
-    .singup-logo {
+    .login-logo {
       font-size: 28px;
     }
-    .singup-logo img{
+    .login-logo img{
       width: 50px;
       height: 50px;
     }
-    .singup-form-heading{
+    .form-heading{
       font-size: 20px;
     }
   }
