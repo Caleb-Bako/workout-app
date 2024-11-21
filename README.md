@@ -57,6 +57,6 @@ This application helps users achieve their fitness goals with customized workout
 ### **Steps to Run Locally**
 1. Clone the repository:
    ```bash
-   git clone https://github.com/your-username/WorkoutBuddy.git
+   git clone https://github.com/Caleb-Bako/workout-app.git
    cd WorkoutBuddy
    
