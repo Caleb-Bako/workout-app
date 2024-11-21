@@ -36,9 +36,6 @@ const NavSections1 = ({open,setOpen}) => {
     setUser(null);
 }
 console.log(open)
-// const openSidemenu = () => {
-//   setOpen(!open);
-// }
 if(redirect){
   return <Navigate to={redirect}/>
 }
